@@ -16,6 +16,7 @@
 .floating-icon-lg {
   width: 120px !important;
   height: auto !important;
+  opacity: 0.8;
 }
 
 /* === Section Tweaks === */
@@ -92,32 +93,27 @@ body {
 /* Floating icon positions from inline styles */
 .floating-shovel {
   position: absolute;
-  left: 2%;
-  top: 10%;
+  left: 1%;
+  top: 7%;
   z-index: 1;
 }
 .floating-leaf {
   position: absolute;
-  left: 5%;
-  top: 20%;
+  right: 50%;
+  top: 10%;
   z-index: 1;
 }
 .floating-plant {
   position: absolute;
-  left: 10%;
-  bottom: 5%;
+  left: 35%;
+  bottom: 0%;
   z-index: 1;
 }
-.floating-sprinkler {
-  position: absolute;
-  right: 10%;
-  bottom: 10%;
-  z-index: 1;
-}
+
 .floating-sprinkler-left {
   position: absolute;
-  left: 15%;
-  bottom: 10%;
+  left: 3%;
+  bottom: 0%;
   z-index: 1;
 }
 
