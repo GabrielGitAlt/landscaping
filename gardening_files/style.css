@@ -1,10 +1,10 @@
 /* === Color Variables === */
 :root {
-  --primary-green: #198754;
+  --primary-green: #208454;
   --background-cream: #f8f7f3;
   --text-dark: #222;
   --text-light: #fff;
-  --accent-green: #28a745;
+  --accent-green: #1b6b45;
 }
 
 /* === Utility Classes === */
@@ -39,12 +39,14 @@ body {
   background-color: var(--primary-green) !important;
   border-color: var(--primary-green) !important;
   color: var(--text-light) !important;
+  opacity: 1 !important;
 }
 .btn-success:hover,
 .btn-success:focus {
   background-color: var(--accent-green) !important;
   border-color: var(--accent-green) !important;
   color: var(--text-light) !important;
+  opacity: 1 !important;
 }
 
 .bg-success {
@@ -86,6 +88,32 @@ body {
   opacity: 0.8;
 }
 
+/* Floating icon positions from inline styles */
+.floating-shovel {
+  position: absolute;
+  left: 2%;
+  top: 10%;
+  z-index: 1;
+}
+.floating-leaf {
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  z-index: 1;
+}
+.floating-plant {
+  position: absolute;
+  left: 10%;
+  bottom: 5%;
+  z-index: 1;
+}
+.floating-sprinkler {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  z-index: 1;
+}
+
 /* Responsive tweaks for floating icons */
 @media (max-width: 991.98px) {
   .floating-icon-lg {
@@ -96,4 +124,29 @@ body {
 /* Hide scroll to top button by default, show when needed (JS toggles display) */
 #scrollToTop {
   display: none;
+}
+
+/* Make all icons green by default unless overridden */
+.icon,
+.fa,
+.fas,
+.far,
+.fab,
+.fal,
+.fad,
+.fa-solid,
+.fa-regular,
+.fa-brands {
+  color: var(--primary-green) !important;
+}
+
+/* But allow .text-white, .text-dark, .text-success, etc. to override */
+.text-white {
+  color: #fff !important;
+}
+.text-dark {
+  color: #222 !important;
+}
+.text-success {
+  color: var(--primary-green) !important;
 }
