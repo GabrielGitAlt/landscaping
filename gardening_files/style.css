@@ -119,9 +119,23 @@ body {
 }
 
 /* Responsive tweaks for floating icons */
+@media (max-width: 1199.98px) {
+  .floating-icon {
+    display: none !important;
+  }
+}
+
 @media (max-width: 991.98px) {
   .floating-icon-lg {
     width: 70px !important;
+  }
+}
+
+/* More vertical padding for banner on mobile */
+@media (max-width: 767.98px) {
+  .banner {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
   }
 }
 
