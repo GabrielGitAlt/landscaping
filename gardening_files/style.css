@@ -16,7 +16,7 @@
 .floating-icon-lg {
   width: 120px !important;
   height: auto !important;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 /* === Section Tweaks === */
@@ -93,7 +93,7 @@ body {
 /* Floating icon positions from inline styles */
 .floating-shovel {
   position: absolute;
-  left: -1%;
+  left: 1%;
   top: 5%;
   z-index: 1;
 }
@@ -101,7 +101,7 @@ body {
   width: 100px !important;
   position: absolute;
   right: 52%;
-  top: 5%;
+  top: 10%;
   z-index: 1;
 }
 .floating-plant {
