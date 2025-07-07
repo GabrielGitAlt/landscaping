@@ -93,14 +93,15 @@ body {
 /* Floating icon positions from inline styles */
 .floating-shovel {
   position: absolute;
-  left: 1%;
-  top: 7%;
+  left: -1%;
+  top: 5%;
   z-index: 1;
 }
 .floating-leaf {
+  width: 100px !important;
   position: absolute;
-  right: 50%;
-  top: 10%;
+  right: 52%;
+  top: 5%;
   z-index: 1;
 }
 .floating-plant {
