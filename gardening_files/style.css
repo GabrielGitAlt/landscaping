@@ -1,9 +1,36 @@
+/* === Color Variables === */
+:root {
+  --primary-green: #198754;
+  --background-cream: #f8f7f3;
+  --text-dark: #222;
+  --text-light: #fff;
+  --accent-green: #28a745;
+  /* Add more as needed */
+}
+
+/* === Utility Classes === */
+.icon-green-mask {
+  filter: brightness(0) saturate(100%) invert(41%) sepia(77%) saturate(420%)
+    hue-rotate(77deg) brightness(92%) contrast(92%);
+  /* This filter makes black icons appear green. Adjust as needed for your green. */
+}
+.floating-icon-lg {
+  width: 120px !important;
+  height: auto !important;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 /* browser prefix adding  */
 /* @@@@@@@@@@@@@  Extend Property CSS Writing Now  @@@@@@@@@@@@@@ */
-.contactus__inner:hover .thumb::after, .feedback2__inner:hover .icon::after, .service__inner:hover .thumb::after, .counter__inner:hover .thumb::after, .natureplant__innerimg:hover .thumb::after, .natureplant__gardingmake .item:hover .thumb::after, .feature__inner:hover .icon::after {
+.contactus__inner:hover .thumb::after,
+.feedback2__inner:hover .icon::after,
+.service__inner:hover .thumb::after,
+.counter__inner:hover .thumb::after,
+.natureplant__innerimg:hover .thumb::after,
+.natureplant__gardingmake .item:hover .thumb::after,
+.feature__inner:hover .icon::after {
   animation: feature 5s infinite;
 }
 @keyframes feature {
@@ -29,12 +56,23 @@
   }
 }
 
-.bottom-left, .right-top, .bottom-top, .top-bottom, .right-left, .left-right {
+.bottom-left,
+.right-top,
+.bottom-top,
+.top-bottom,
+.right-left,
+.left-right {
   animation-duration: 4s;
   animation-iteration-count: infinite;
 }
 
-.accordion-item .accordion-button, .servicesingle__middle .text h4, .servicesingle__top .text h4, .servicesingle__sidebar .allheading ul li a, .servicesingle__sidebar .allheading ul li, .counter__content h6, body,
+.accordion-item .accordion-button,
+.servicesingle__middle .text h4,
+.servicesingle__top .text h4,
+.servicesingle__sidebar .allheading ul li a,
+.servicesingle__sidebar .allheading ul li,
+.counter__content h6,
+body,
 button,
 input,
 select,
@@ -47,28 +85,117 @@ textarea {
   font-family: "Public Sans", sans-serif;
 }
 
-.servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li .textinner span, .section__header span {
+.servicesingle__sidebar
+  .brouchore.brouchoreneedhelp
+  .text
+  ul
+  li
+  .textinner
+  span,
+.section__header span {
   font-family: "Manrope", sans-serif;
 }
 
-.cartpage__body ul li .remove, .cartpage__body ul li .total, .cartpage__body ul li .price, .cartpage__body ul li .product {
-  border-right: 1px solid #F2F6F9;
-  border-top: 1px solid #F2F6F9;
+.cartpage__body ul li .remove,
+.cartpage__body ul li .total,
+.cartpage__body ul li .price,
+.cartpage__body ul li .product {
+  border-right: 1px solid #f2f6f9;
+  border-top: 1px solid #f2f6f9;
 }
 
-.cartpage__paymentitem .header, .cartpage__body ul li:last-child .remove, .cartpage__body ul li:last-child .total, .cartpage__body ul li:last-child .countadd, .cartpage__body ul li:last-child .price, .cartpage__body ul li:last-child .product {
-  border-bottom: 1px solid #F2F6F9;
+.cartpage__paymentitem .header,
+.cartpage__body ul li:last-child .remove,
+.cartpage__body ul li:last-child .total,
+.cartpage__body ul li:last-child .countadd,
+.cartpage__body ul li:last-child .price,
+.cartpage__body ul li:last-child .product {
+  border-bottom: 1px solid #f2f6f9;
 }
 
-.contactus__inner .text ul li span, .contactus__inner .thumb i, .cartpage__paymentitem .content form .totall ul li span:last-child, .cartpage__paymentitem .content form .totall ul li span, .cartpage__paymentitem .content form .update button, .cartpage__paymentitem .content form .country p, .cartpage__paymentitem .header ul li:last-child, .cartpage__body ul li .remove i, .cartpage__header ul li, .cartdesk__content ul li i, .cartdesk__header nav .nav .nav-link, .cartdesk__text .nametext .allstar .star i, .shopdetails__content ul li i, .shopdetails__content .rating span i, .shopdetails__content h6 span, .shoppagenav .nav-tab .nav-link.active, .shoppage__item .content .allstar i, .shoppage__item .thum .shoppagelink a i, .shoppage__item:hover .content a, .testmonial__content .profile .star ul li i, .skill__item .skill-title .right span, .process__inner:hover h6, .blogsingle__leavecoments--addreview .formarea form .alliput input, .blogsingle__author .author-content .text ul li a, .blogsingle__content .tagbutton-icon .tagbutton ul li a:hover, .blogsingle__content .heading ul li i, .blogsingle__catagory .content ul li:hover span, .blogsingle__catagory .content ul li:hover h6 a, .blogsingle__popularpost .postitem > ul > li:hover .content h6 a, .blogsingle__search .search-area .icon i, .blog__inner:hover .content .text h6 a, .blog__inner .content .text ul li i, .feedback2__inner:hover .text .profile .name h6, .feedback2__inner .text .profile .name ul li i, .feedback__inner .top .profile .star ul li i, .teamprofile__personalcontent .data > ul li .allicon ul li a i, .team__inner:hover .text h6 a, .team__inner .thumb .allicon ul li a:hover i, .portfoliosingle__right ul li span, .projectfilter__item .inneritem .upitem a i, .project__item:hover .content .content-inner h6 a, .servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li .icon i, .servicesingle__sidebar .allheading ul li a i, .service2__item:hover h6 a, .service__inner:hover .text a, .service__inner:hover .text h6 a, .natureplant__innerimg .counteritem .text h5 span, .natureplant__gardingmake .item .text span, .natureplant__content ul li i, .feature__inner:hover .text h6, .footer__photo .allphoto .item .inneritem .upitem a:hover i, .footer__news ul li:hover .text h6 a, .footer__news ul li .text p, .footer__link ul li:hover a, .footer__link ul li i, .header .menu-item-has-children.open > a::after, .header .menu-item-has-children.open > a::before, .header__nav .mainactive > ul li > ul li:hover::after, .header__cart .cart-details .total .subtotal p span, .header__cart .cart-details .item:hover .right .text h6 a, .header__cart .cart-details .item .right .text p, .header__cart .carticon a i, .header__bottom .right .ellepsis i, .header__bottom .right .bar i, .header__topcontent--topcontentpage2 .right ul li a i, .header__topcontent .left ul li .icon i, .pagi .pagi-inner ul li:last-child a i, .pagi .pagi-inner ul li:first-child a i, .pagi .pagi-inner ul li a, .pageheader__content ul li.active, .fourzero__content form i, .section__header span {
-  color: #1E1E1E;
+.contactus__inner .text ul li span,
+.contactus__inner .thumb i,
+.cartpage__paymentitem .content form .totall ul li span:last-child,
+.cartpage__paymentitem .content form .totall ul li span,
+.cartpage__paymentitem .content form .update button,
+.cartpage__paymentitem .content form .country p,
+.cartpage__paymentitem .header ul li:last-child,
+.cartpage__body ul li .remove i,
+.cartpage__header ul li,
+.cartdesk__content ul li i,
+.cartdesk__header nav .nav .nav-link,
+.cartdesk__text .nametext .allstar .star i,
+.shopdetails__content ul li i,
+.shopdetails__content .rating span i,
+.shopdetails__content h6 span,
+.shoppagenav .nav-tab .nav-link.active,
+.shoppage__item .content .allstar i,
+.shoppage__item .thum .shoppagelink a i,
+.shoppage__item:hover .content a,
+.testmonial__content .profile .star ul li i,
+.skill__item .skill-title .right span,
+.process__inner:hover h6,
+.blogsingle__leavecoments--addreview .formarea form .alliput input,
+.blogsingle__author .author-content .text ul li a,
+.blogsingle__content .tagbutton-icon .tagbutton ul li a:hover,
+.blogsingle__content .heading ul li i,
+.blogsingle__catagory .content ul li:hover span,
+.blogsingle__catagory .content ul li:hover h6 a,
+.blogsingle__popularpost .postitem > ul > li:hover .content h6 a,
+.blogsingle__search .search-area .icon i,
+.blog__inner:hover .content .text h6 a,
+.blog__inner .content .text ul li i,
+.feedback2__inner:hover .text .profile .name h6,
+.feedback2__inner .text .profile .name ul li i,
+.feedback__inner .top .profile .star ul li i,
+.teamprofile__personalcontent .data > ul li .allicon ul li a i,
+.team__inner:hover .text h6 a,
+.team__inner .thumb .allicon ul li a:hover i,
+.portfoliosingle__right ul li span,
+.projectfilter__item .inneritem .upitem a i,
+.project__item:hover .content .content-inner h6 a,
+.servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li .icon i,
+.servicesingle__sidebar .allheading ul li a i,
+.service2__item:hover h6 a,
+.service__inner:hover .text a,
+.service__inner:hover .text h6 a,
+.natureplant__innerimg .counteritem .text h5 span,
+.natureplant__gardingmake .item .text span,
+.natureplant__content ul li i,
+.feature__inner:hover .text h6,
+.footer__photo .allphoto .item .inneritem .upitem a:hover i,
+.footer__news ul li:hover .text h6 a,
+.footer__news ul li .text p,
+.footer__link ul li:hover a,
+.footer__link ul li i,
+.header .menu-item-has-children.open > a::after,
+.header .menu-item-has-children.open > a::before,
+.header__nav .mainactive > ul li > ul li:hover::after,
+.header__cart .cart-details .total .subtotal p span,
+.header__cart .cart-details .item:hover .right .text h6 a,
+.header__cart .cart-details .item .right .text p,
+.header__cart .carticon a i,
+.header__bottom .right .ellepsis i,
+.header__bottom .right .bar i,
+.header__topcontent--topcontentpage2 .right ul li a i,
+.header__topcontent .left ul li .icon i,
+.pagi .pagi-inner ul li:last-child a i,
+.pagi .pagi-inner ul li:first-child a i,
+.pagi .pagi-inner ul li a,
+.pageheader__content ul li.active,
+.fourzero__content form i,
+.section__header span {
+  color: #1e1e1e;
 }
 
-.blogsingle__leavecoments--addreview .formarea form .alliput ::placeholder, .blogsingle__content .tagbutton-icon .tagicon ul li:first-child, .blogsingle__content .tagbutton-icon .tagbutton ul li:first-child {
-  color: #1E1E1E !important;
+.blogsingle__leavecoments--addreview .formarea form .alliput ::placeholder,
+.blogsingle__content .tagbutton-icon .tagicon ul li:first-child,
+.blogsingle__content .tagbutton-icon .tagbutton ul li:first-child {
+  color: #1e1e1e !important;
 }
 
-.project__item:hover .content, .header__nav .mainactive > ul li > ul {
+.project__item:hover .content,
+.header__nav .mainactive > ul li > ul {
   visibility: visible;
 }
 
@@ -87,25 +214,42 @@ textarea {
   }
 }
 
-.testmonial .thum, .feedback__inner .top .thumb {
+.testmonial .thum,
+.feedback__inner .top .thumb {
   width: 80px;
   height: 80px;
   line-height: 80px;
 }
 
 .contactus__inner .thumb::after {
-  border: 1px solid #73B611;
+  border: 1px solid #73b611;
 }
 
 .header__cart .cart-details .total .checkout a {
-  border: 2px solid #73B611;
+  border: 2px solid #73b611;
 }
 
-.blog__inner:hover .thumb::after, .blog__inner:hover .thumb::before, .projectfilter__item::after, .natureplant__innerimg .counteritem, .imghover:hover::after, .imghover:hover::before {
+.blog__inner:hover .thumb::after,
+.blog__inner:hover .thumb::before,
+.projectfilter__item::after,
+.natureplant__innerimg .counteritem,
+.imghover:hover::after,
+.imghover:hover::before {
   opacity: 0;
 }
 
-.blog__inner .thumb::after, .blog__inner .thumb::before, .projectfilter__item:hover .inneritem, .projectfilter__item:hover::after, .project__item:hover .content, .project__item .content, .footer__photo .allphoto .item:hover .inneritem, .swiper-pagination-bullet, .header__nav .mainactive > ul li > ul li:hover::after, .header__nav .mainactive > ul li > ul, .imghover::after, .imghover::before {
+.blog__inner .thumb::after,
+.blog__inner .thumb::before,
+.projectfilter__item:hover .inneritem,
+.projectfilter__item:hover::after,
+.project__item:hover .content,
+.project__item .content,
+.footer__photo .allphoto .item:hover .inneritem,
+.swiper-pagination-bullet,
+.header__nav .mainactive > ul li > ul li:hover::after,
+.header__nav .mainactive > ul li > ul,
+.imghover::after,
+.imghover::before {
   opacity: 1;
 }
 
@@ -113,11 +257,16 @@ textarea {
   font-size: 12px;
 }
 
-.teamprofile__personalcontent .data > ul li .allicon ul li a i, .projectfilter__item .inneritem .upitem a i, .scrollToTop i {
+.teamprofile__personalcontent .data > ul li .allicon ul li a i,
+.projectfilter__item .inneritem .upitem a i,
+.scrollToTop i {
   font-size: 0.875rem;
 }
 
-.cartpage__paymentitem .content form .totall ul li span, .cartpage__discountcode button, .teamprofile__personalcontent span, .newslatter__form form button {
+.cartpage__paymentitem .content form .totall ul li span,
+.cartpage__discountcode button,
+.teamprofile__personalcontent span,
+.newslatter__form form button {
   font-size: 1rem;
 }
 
@@ -125,24 +274,76 @@ textarea {
   font-size: 20px;
 }
 
-.servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li, .swiper-pagination-bullet, .header__cart .cart-details .total .checkout a:hover, .pluse_1::after,
+.servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li,
+.swiper-pagination-bullet,
+.header__cart .cart-details .total .checkout a:hover,
+.pluse_1::after,
 .pluse_2::after {
   background: transparent;
 }
 
-.request--contactus::after, .team__inner--innerpage2 .text, .service--servicepage3, .natureplant--aboutpage::before, .natureplant--aboutpage::after, .banner--bannertwo::after, .banner--bannertwo {
+.request--contactus::after,
+.team__inner--innerpage2 .text,
+.service--servicepage3,
+.natureplant--aboutpage::before,
+.natureplant--aboutpage::after,
+.banner--bannertwo::after,
+.banner--bannertwo {
   background: transparent !important;
 }
 
-.accordion-item--itme2Serpage .accordion-button:not(.collapsed) .plus-icon, .accordion-item--itme2Serpage .accordion-button:not(.collapsed), .accordion-item .accordion-button:not(.collapsed) .plus-icon, .accordion-item .accordion-button:not(.collapsed), .accordion-item .accordion-button .plus-icon, .blogsingle__content .tagbutton-icon .tagicon ul li a, .teamprofile__personalcontent .data > ul li .allicon ul li a, .team__inner--innerpage2 .text, .team__inner .thumb::after, .footer__link ul li i, .banner__content--contentpage2 .bannerbtn, .banner__content--contentpage2 p, .banner__content--contentpage2 h3, .header__nav .mainactive > ul li > ul li a, .header__bottom .right .ellepsis, .header__bottom.header-fixed .ellepsis {
+.accordion-item--itme2Serpage .accordion-button:not(.collapsed) .plus-icon,
+.accordion-item--itme2Serpage .accordion-button:not(.collapsed),
+.accordion-item .accordion-button:not(.collapsed) .plus-icon,
+.accordion-item .accordion-button:not(.collapsed),
+.accordion-item .accordion-button .plus-icon,
+.blogsingle__content .tagbutton-icon .tagicon ul li a,
+.teamprofile__personalcontent .data > ul li .allicon ul li a,
+.team__inner--innerpage2 .text,
+.team__inner .thumb::after,
+.footer__link ul li i,
+.banner__content--contentpage2 .bannerbtn,
+.banner__content--contentpage2 p,
+.banner__content--contentpage2 h3,
+.header__nav .mainactive > ul li > ul li a,
+.header__bottom .right .ellepsis,
+.header__bottom.header-fixed .ellepsis {
   transition: all 0.3s ease;
 }
 
-.shoppage__item .thum:after, .shoppage__item .thum .shoppagelink, .team__inner .thumb .allicon ul, .project__item .content, .project__item:after, .natureplant__innerimg .counteritem, .feature__inner .icon img, .header__cart .cart-details, .header__bottom.header-fixed, .header__bottom {
+.shoppage__item .thum:after,
+.shoppage__item .thum .shoppagelink,
+.team__inner .thumb .allicon ul,
+.project__item .content,
+.project__item:after,
+.natureplant__innerimg .counteritem,
+.feature__inner .icon img,
+.header__cart .cart-details,
+.header__bottom.header-fixed,
+.header__bottom {
   transition: all 0.5s ease;
 }
 
-.shoppagenav .nav-tab .nav-link.active, .shoppage__item .thum .shoppagelink a, .testmonial .thum, .request__form form textarea, .request__form form .allinput input, .accordion-item--itme2Serpage .accordion-button:not(.collapsed) .plus-icon, .accordion-item--itme2Serpage .accordion-body, .accordion-item--itme2Serpage .accordion-button .plus-icon, .accordion-item .accordion-button:not(.collapsed) .plus-icon, .accordion-item .accordion-button:not(.collapsed), .accordion-item .accordion-button, .blogsingle__leavecoments--addreview .formarea form .alliput textarea, .feedback2__inner .icon, .feedback__inner .top .thumb, .projectfilter__item .inneritem .upitem a, .natureplant__innerimg .counteritem, .footer__photo .allphoto .item .inneritem .upitem a:hover, .header__cart .cart-details, .pageheader__content ul li a:after, body,
+.shoppagenav .nav-tab .nav-link.active,
+.shoppage__item .thum .shoppagelink a,
+.testmonial .thum,
+.request__form form textarea,
+.request__form form .allinput input,
+.accordion-item--itme2Serpage .accordion-button:not(.collapsed) .plus-icon,
+.accordion-item--itme2Serpage .accordion-body,
+.accordion-item--itme2Serpage .accordion-button .plus-icon,
+.accordion-item .accordion-button:not(.collapsed) .plus-icon,
+.accordion-item .accordion-button:not(.collapsed),
+.accordion-item .accordion-button,
+.blogsingle__leavecoments--addreview .formarea form .alliput textarea,
+.feedback2__inner .icon,
+.feedback__inner .top .thumb,
+.projectfilter__item .inneritem .upitem a,
+.natureplant__innerimg .counteritem,
+.footer__photo .allphoto .item .inneritem .upitem a:hover,
+.header__cart .cart-details,
+.pageheader__content ul li a:after,
+body,
 button,
 input,
 select,
@@ -151,15 +352,35 @@ textarea {
   background: #fff;
 }
 
-.skill__item--itemaboutpage .skillbar-container, .accordion-item .accordion-button .plus-icon:before, .accordion-item .accordion-button .plus-icon:after, .blogsingle__leavecoments--addreview .formarea form .alliput input, .team__inner .thumb .allicon ul li a:hover, .project--projectpage3, .natureplant--natureplantpage2, .header__topcontent--topcontentpage2 .right ul li a {
+.skill__item--itemaboutpage .skillbar-container,
+.accordion-item .accordion-button .plus-icon:before,
+.accordion-item .accordion-button .plus-icon:after,
+.blogsingle__leavecoments--addreview .formarea form .alliput input,
+.team__inner .thumb .allicon ul li a:hover,
+.project--projectpage3,
+.natureplant--natureplantpage2,
+.header__topcontent--topcontentpage2 .right ul li a {
   background: #fff !important;
 }
 
-.shopdetails__leftinner .swiper-slide-thumb-active, .team__inner .text {
-  background: #F8F5F0;
+.shopdetails__leftinner .swiper-slide-thumb-active,
+.team__inner .text {
+  background: #f8f5f0;
 }
 
-.contactus__inner .thumb, .cartpage__item, .testmonial__header p, .process__item, .service2__item .thumb .icon, .counter__inner .thumb, .feature__inner .icon, .header__bottom, .header, .faqcontent__header p, .partner__item, .fourzero__content p, .section__header--header2 p {
+.contactus__inner .thumb,
+.cartpage__item,
+.testmonial__header p,
+.process__item,
+.service2__item .thumb .icon,
+.counter__inner .thumb,
+.feature__inner .icon,
+.header__bottom,
+.header,
+.faqcontent__header p,
+.partner__item,
+.fourzero__content p,
+.section__header--header2 p {
   margin: auto;
 }
 
@@ -171,12 +392,96 @@ textarea {
   margin: 0 auto !important;
 }
 
-.cartpage__paymentitem .content form .totall ul li, .cartpage__paymentitem .content form .item label, .cartpage__paymentitem .content form .item, .cartpage__paymentitem .header ul, .cartpage__discountcode, .cartpage__body ul li .countadd .cart-plus-minus, .cartpage__body ul li .countadd, .cartpage__body ul li .product, .cartpage__body ul li, .cartpage__header ul, .cartdesk__text .nametext, .shopdetails__content .countadd .cart-plus-minus, .shopdetails__content .countadd, .shopdetails__content .rating, .shoppagenav .nav-tab, .shoppagenav, .shoppage__item .content .allstar, .shoppage__item .thum .shoppagelink, .testmonial__content .profile .star ul, .testmonial__content .profile, .testmonial__item, .testmonial__header, .skill__item .skill-title, .request__form form .allinput, .blogsingle__leavecoments--addreview .formarea form .reviewbtn .allreview ul, .blogsingle__leavecoments--addreview .formarea form .reviewbtn, .blogsingle__leavecoments .formarea form .alliput, .blogsingle__comments .content ul li .commentsarea .name-replaybtn, .blogsingle__comments .content ul li, .blogsingle__comments .content ul, .blogsingle__author .author-content .text ul, .blogsingle__author .author-content, .blogsingle__content .tagbutton-icon .tagicon ul, .blogsingle__content .tagbutton-icon .tagbutton ul, .blogsingle__content .tagbutton-icon, .blogsingle__content .quode, .blogsingle__content .heading ul, .blogsingle__catagory .content ul li, .blogsingle__catagory .content ul, .blogsingle__popularpost--relatedPost .postitem ul, .blogsingle__popularpost .postitem > ul > li, .blogsingle__sidebar, .blog__inner .content .text ul, .feedback2__inner .text .profile .name ul, .feedback2__inner .text .profile, .feedback__inner .top .profile .star ul, .feedback__inner .top .profile, .feedback__inner .top, .feedback__item, .teamprofile__personalcontent .data > ul li .allicon ul, .teamprofile__personalcontent .data > ul li, .teamprofile__personalcontent .data > ul, .portfoliosingle__right ul, .projectfilter__item .inneritem, .projectfilter__header ul, .servicesingle__sidebar .allheading ul li, .counter__content .maincounter, .natureplant__innerimg .counteritem, .natureplant__gardingmake .item, .natureplant__gardingmake, .natureplant__content ul, .footer__photo .allphoto .item .inneritem, .footer__photo .allphoto, .footer__news ul li, .footer__link ul, .footer__about .text .allsocialicon ul, .banner__content .bannerbtn, .header__nav .mainactive > ul, .header__cart .cart-details .total, .header__cart .cart-details .item .right, .header__cart .cart-details .item, .header__cart .cart-details, .header__cart, .header__bottom .right, .header__topcontent .right ul, .header__topcontent .left ul li, .header__topcontent .left ul, .header__topcontent, .pagi .pagi-inner ul, .pagi .pagi-inner, .nav-pills, .pageheader__content ul, .newslatter__form form, .newslatter__form {
+.cartpage__paymentitem .content form .totall ul li,
+.cartpage__paymentitem .content form .item label,
+.cartpage__paymentitem .content form .item,
+.cartpage__paymentitem .header ul,
+.cartpage__discountcode,
+.cartpage__body ul li .countadd .cart-plus-minus,
+.cartpage__body ul li .countadd,
+.cartpage__body ul li .product,
+.cartpage__body ul li,
+.cartpage__header ul,
+.cartdesk__text .nametext,
+.shopdetails__content .countadd .cart-plus-minus,
+.shopdetails__content .countadd,
+.shopdetails__content .rating,
+.shoppagenav .nav-tab,
+.shoppagenav,
+.shoppage__item .content .allstar,
+.shoppage__item .thum .shoppagelink,
+.testmonial__content .profile .star ul,
+.testmonial__content .profile,
+.testmonial__item,
+.testmonial__header,
+.skill__item .skill-title,
+.request__form form .allinput,
+.blogsingle__leavecoments--addreview .formarea form .reviewbtn .allreview ul,
+.blogsingle__leavecoments--addreview .formarea form .reviewbtn,
+.blogsingle__leavecoments .formarea form .alliput,
+.blogsingle__comments .content ul li .commentsarea .name-replaybtn,
+.blogsingle__comments .content ul li,
+.blogsingle__comments .content ul,
+.blogsingle__author .author-content .text ul,
+.blogsingle__author .author-content,
+.blogsingle__content .tagbutton-icon .tagicon ul,
+.blogsingle__content .tagbutton-icon .tagbutton ul,
+.blogsingle__content .tagbutton-icon,
+.blogsingle__content .quode,
+.blogsingle__content .heading ul,
+.blogsingle__catagory .content ul li,
+.blogsingle__catagory .content ul,
+.blogsingle__popularpost--relatedPost .postitem ul,
+.blogsingle__popularpost .postitem > ul > li,
+.blogsingle__sidebar,
+.blog__inner .content .text ul,
+.feedback2__inner .text .profile .name ul,
+.feedback2__inner .text .profile,
+.feedback__inner .top .profile .star ul,
+.feedback__inner .top .profile,
+.feedback__inner .top,
+.feedback__item,
+.teamprofile__personalcontent .data > ul li .allicon ul,
+.teamprofile__personalcontent .data > ul li,
+.teamprofile__personalcontent .data > ul,
+.portfoliosingle__right ul,
+.projectfilter__item .inneritem,
+.projectfilter__header ul,
+.servicesingle__sidebar .allheading ul li,
+.counter__content .maincounter,
+.natureplant__innerimg .counteritem,
+.natureplant__gardingmake .item,
+.natureplant__gardingmake,
+.natureplant__content ul,
+.footer__photo .allphoto .item .inneritem,
+.footer__photo .allphoto,
+.footer__news ul li,
+.footer__link ul,
+.footer__about .text .allsocialicon ul,
+.banner__content .bannerbtn,
+.header__nav .mainactive > ul,
+.header__cart .cart-details .total,
+.header__cart .cart-details .item .right,
+.header__cart .cart-details .item,
+.header__cart .cart-details,
+.header__cart,
+.header__bottom .right,
+.header__topcontent .right ul,
+.header__topcontent .left ul li,
+.header__topcontent .left ul,
+.header__topcontent,
+.pagi .pagi-inner ul,
+.pagi .pagi-inner,
+.nav-pills,
+.pageheader__content ul,
+.newslatter__form form,
+.newslatter__form {
   display: flex;
   flex-wrap: wrap;
 }
 
-.header .menu-item-has-children > a, .scrollToTop i,
+.header .menu-item-has-children > a,
+.scrollToTop i,
 .contactus__inner .thumb,
 .cartdesk__itemheading,
 .shoppage__item .thum,
@@ -230,10 +535,69 @@ textarea {
   position: relative;
 }
 
-.contactus__inner .thumb::after, .cartdesk__itemheading:after, .shoppage__item .thum:after, .shoppage__item .thum .shoppagelink, .testmonial .thum .quode, .question__rightimg .plybtn, .accordion-item .accordion-button .plus-icon:before, .accordion-item .accordion-button .plus-icon:after, .process__item .base::before, .process__item .base, .process__inner::after, .blogsingle__search .search-area .icon, .blog .positionblog, .blog__inner .thumb::after, .blog__inner .thumb::before, .feedback2__inner .icon::after, .feedback .positionfeedback, .feedback::after, .team__inner--innerpage2 .text, .team__inner .thumb::after, .team__inner .thumb .allicon, .projectfilter__item::after, .projectfilter__item .inneritem, .project__item .content, .project__item:after, .service .positonshape, .service--servicepage3::before, .service--servicepage3::after, .service__inner .thumb::after, .counter__inner .thumb::after, .natureplant .position, .natureplant--natureplantpage3 .samepositon, .natureplant__innerimg .counteritem .thumb::after, .natureplant__innerimg .counteritem, .natureplant__gardingmake .item .thumb::after, .feature__inner .icon::after, .footer__photo .allphoto .item .inneritem, .footer__news ul li:first-child::after, .banner .position_bshape, .header .menu-item-has-children > a::before, .header .menu-item-has-children > a::after, .header__cart .cart-details, .header__cart .carticon:after, .bottom-left, .right-top, .bottom-top, .top-bottom, .right-left, .left-right, .imghover::after, .imghover::before, .pageheader__content ul li a:after, .newslatter__bg, .plybtn a:after, .plybtn a:before, .overly::after, .pluse_1::after, .pluse_1::before,
+.contactus__inner .thumb::after,
+.cartdesk__itemheading:after,
+.shoppage__item .thum:after,
+.shoppage__item .thum .shoppagelink,
+.testmonial .thum .quode,
+.question__rightimg .plybtn,
+.accordion-item .accordion-button .plus-icon:before,
+.accordion-item .accordion-button .plus-icon:after,
+.process__item .base::before,
+.process__item .base,
+.process__inner::after,
+.blogsingle__search .search-area .icon,
+.blog .positionblog,
+.blog__inner .thumb::after,
+.blog__inner .thumb::before,
+.feedback2__inner .icon::after,
+.feedback .positionfeedback,
+.feedback::after,
+.team__inner--innerpage2 .text,
+.team__inner .thumb::after,
+.team__inner .thumb .allicon,
+.projectfilter__item::after,
+.projectfilter__item .inneritem,
+.project__item .content,
+.project__item:after,
+.service .positonshape,
+.service--servicepage3::before,
+.service--servicepage3::after,
+.service__inner .thumb::after,
+.counter__inner .thumb::after,
+.natureplant .position,
+.natureplant--natureplantpage3 .samepositon,
+.natureplant__innerimg .counteritem .thumb::after,
+.natureplant__innerimg .counteritem,
+.natureplant__gardingmake .item .thumb::after,
+.feature__inner .icon::after,
+.footer__photo .allphoto .item .inneritem,
+.footer__news ul li:first-child::after,
+.banner .position_bshape,
+.header .menu-item-has-children > a::before,
+.header .menu-item-has-children > a::after,
+.header__cart .cart-details,
+.header__cart .carticon:after,
+.bottom-left,
+.right-top,
+.bottom-top,
+.top-bottom,
+.right-left,
+.left-right,
+.imghover::after,
+.imghover::before,
+.pageheader__content ul li a:after,
+.newslatter__bg,
+.plybtn a:after,
+.plybtn a:before,
+.overly::after,
+.pluse_1::after,
+.pluse_1::before,
 .pluse_2::after,
-.pluse_2::before, .pluse_1,
-.pluse_2, .fourzero__content form i,
+.pluse_2::before,
+.pluse_1,
+.pluse_2,
+.fourzero__content form i,
 .custom-btn:before,
 .custom-btn:after {
   position: absolute;
@@ -244,37 +608,136 @@ textarea {
   top: 100%;
 }
 
-.shoppage__item .thum .shoppagelink, .question__rightimg .plybtn, .accordion-item .accordion-button .plus-icon:before, .accordion-item .accordion-button .plus-icon:after, .process__inner::after, .blogsingle__search .search-area .icon, .blog__inner .thumb::after, .projectfilter__item .inneritem, .project__item .content, .footer__photo .allphoto .item .inneritem, .banner .position_bshape.contentrightimg, .header .menu-item-has-children > a::after, .header__nav .mainactive > ul li > ul li::after, .imghover::after, .pluse_1::after, .pluse_1::before,
+.shoppage__item .thum .shoppagelink,
+.question__rightimg .plybtn,
+.accordion-item .accordion-button .plus-icon:before,
+.accordion-item .accordion-button .plus-icon:after,
+.process__inner::after,
+.blogsingle__search .search-area .icon,
+.blog__inner .thumb::after,
+.projectfilter__item .inneritem,
+.project__item .content,
+.footer__photo .allphoto .item .inneritem,
+.banner .position_bshape.contentrightimg,
+.header .menu-item-has-children > a::after,
+.header__nav .mainactive > ul li > ul li::after,
+.imghover::after,
+.pluse_1::after,
+.pluse_1::before,
 .pluse_2::after,
-.pluse_2::before, .pluse_1,
-.pluse_2, .fourzero__content form i {
+.pluse_2::before,
+.pluse_1,
+.pluse_2,
+.fourzero__content form i {
   top: 50%;
 }
 
-.contactus__inner .thumb::after, .shoppage__item .thum:after, .blog__inner:hover .thumb::after, .blog__inner .thumb::before, .feedback2__inner .icon::after, .feedback::after, .projectfilter__item::after, .project__item:after, .service--servicepage3::before, .service--servicepage3::after, .service__inner .thumb::after, .counter__inner .thumb::after, .natureplant--natureplantpage3 .samepositon.topright, .natureplant__innerimg .counteritem .thumb::after, .natureplant__gardingmake .item .thumb::after, .feature__inner .icon::after, .custom-btn:before, .custom-btn:after, .imghover:hover::after, .imghover::before, .plybtn a:after, .plybtn a:before, .overly::after, .preloader {
+.contactus__inner .thumb::after,
+.shoppage__item .thum:after,
+.blog__inner:hover .thumb::after,
+.blog__inner .thumb::before,
+.feedback2__inner .icon::after,
+.feedback::after,
+.projectfilter__item::after,
+.project__item:after,
+.service--servicepage3::before,
+.service--servicepage3::after,
+.service__inner .thumb::after,
+.counter__inner .thumb::after,
+.natureplant--natureplantpage3 .samepositon.topright,
+.natureplant__innerimg .counteritem .thumb::after,
+.natureplant__gardingmake .item .thumb::after,
+.feature__inner .icon::after,
+.custom-btn:before,
+.custom-btn:after,
+.imghover:hover::after,
+.imghover::before,
+.plybtn a:after,
+.plybtn a:before,
+.overly::after,
+.preloader {
   top: 0;
 }
 
-.cartdesk__itemheading:after, .shoppage__item .thum .shoppagelink, .testmonial .thum .quode, .question__rightimg .plybtn, .accordion-item .accordion-button .plus-icon:before, .accordion-item .accordion-button .plus-icon:after, .process__inner::after, .blog__inner .thumb::before, .projectfilter__item .inneritem, .project__item .content, .footer__photo .allphoto .item .inneritem, .imghover::before, .newslatter__bg, .pluse_1::after, .pluse_1::before,
+.cartdesk__itemheading:after,
+.shoppage__item .thum .shoppagelink,
+.testmonial .thum .quode,
+.question__rightimg .plybtn,
+.accordion-item .accordion-button .plus-icon:before,
+.accordion-item .accordion-button .plus-icon:after,
+.process__inner::after,
+.blog__inner .thumb::before,
+.projectfilter__item .inneritem,
+.project__item .content,
+.footer__photo .allphoto .item .inneritem,
+.imghover::before,
+.newslatter__bg,
+.pluse_1::after,
+.pluse_1::before,
 .pluse_2::after,
-.pluse_2::before, .pluse_1,
+.pluse_2::before,
+.pluse_1,
 .pluse_2 {
   left: 50%;
 }
 
-.contactus__inner .thumb::after, .shoppage__item .thum:after, .process__item .base::before, .blog__inner:hover .thumb::before, .blog__inner .thumb::after, .feedback2__inner .icon::after, .feedback::after, .team__inner--innerpage2 .text, .team__inner .thumb::after, .projectfilter__item::after, .project__item:after, .service--servicepage3::after, .service__inner .thumb::after, .counter__inner .thumb::after, .natureplant .position.leftimg, .natureplant__innerimg .counteritem .thumb::after, .natureplant__gardingmake .item .thumb::after, .feature__inner .icon::after, .footer__news ul li:first-child::after, .custom-btn:before, .custom-btn:after, .imghover:hover::before, .imghover::after, .plybtn a:after, .plybtn a:before, .overly::after, .preloader {
+.contactus__inner .thumb::after,
+.shoppage__item .thum:after,
+.process__item .base::before,
+.blog__inner:hover .thumb::before,
+.blog__inner .thumb::after,
+.feedback2__inner .icon::after,
+.feedback::after,
+.team__inner--innerpage2 .text,
+.team__inner .thumb::after,
+.projectfilter__item::after,
+.project__item:after,
+.service--servicepage3::after,
+.service__inner .thumb::after,
+.counter__inner .thumb::after,
+.natureplant .position.leftimg,
+.natureplant__innerimg .counteritem .thumb::after,
+.natureplant__gardingmake .item .thumb::after,
+.feature__inner .icon::after,
+.footer__news ul li:first-child::after,
+.custom-btn:before,
+.custom-btn:after,
+.imghover:hover::before,
+.imghover::after,
+.plybtn a:after,
+.plybtn a:before,
+.overly::after,
+.preloader {
   left: 0;
 }
 
-.blog__inner:hover .thumb::before, .blog__inner .thumb::after, .service--servicepage3::before, .natureplant--natureplantpage3 .samepositon.topright, .natureplant--natureplantpage3 .samepositon.bottomright, .custom-btn:before, .custom-btn:after, .imghover:hover::before, .imghover::after {
+.blog__inner:hover .thumb::before,
+.blog__inner .thumb::after,
+.service--servicepage3::before,
+.natureplant--natureplantpage3 .samepositon.topright,
+.natureplant--natureplantpage3 .samepositon.bottomright,
+.custom-btn:before,
+.custom-btn:after,
+.imghover:hover::before,
+.imghover::after {
   right: 0%;
 }
 
-.blog__inner .thumb::after, .imghover::after {
+.blog__inner .thumb::after,
+.imghover::after {
   bottom: 50%;
 }
 
-.blog__inner:hover .thumb::after, .blog__inner .thumb::before, .team__inner--innerpage2 .text, .team__inner .thumb::after, .natureplant .position.leftimg, .natureplant--natureplantpage3 .samepositon.bottomright, .custom-btn:before, .custom-btn:after, .imghover:hover::after, .imghover::before {
+.blog__inner:hover .thumb::after,
+.blog__inner .thumb::before,
+.team__inner--innerpage2 .text,
+.team__inner .thumb::after,
+.natureplant .position.leftimg,
+.natureplant--natureplantpage3 .samepositon.bottomright,
+.custom-btn:before,
+.custom-btn:after,
+.imghover:hover::after,
+.imghover::before {
   bottom: 0%;
 }
 
@@ -283,12 +746,66 @@ textarea {
   margin: 0;
 }
 
-.contactus__inner .text ul, .cartpage__paymentitem .header ul, .cartpage__body ul, .cartpage__header ul, .cartdesk__content ul, .shopdetails__content ul, .blogsingle__leavecoments--addreview .formarea form .reviewbtn .allreview ul, .blogsingle__comments .content ul, .blogsingle__author .author-content .text ul, .blogsingle__content .tagbutton-icon .tagicon ul, .blogsingle__content .tagbutton-icon .tagbutton ul, .blogsingle__content .heading ul, .blogsingle__catagory .content ul, .blogsingle__popularpost .postitem > ul, .feedback2__inner .text .profile .name ul, .feedback__inner .top .profile .star ul, .teamprofile__personalcontent .data > ul li .allicon ul, .teamprofile__personalcontent .data > ul, .team__inner .thumb .allicon ul, .portfoliosingle__right ul, .projectfilter__header ul, .servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul, .servicesingle__sidebar .allheading ul, .natureplant__content ul, .footer__news ul, .footer__link ul, .footer__about .text .allsocialicon ul, .header__nav .mainactive > ul li > ul li, .header__nav .mainactive > ul li > ul, .header__nav .mainactive > ul li, .header__nav .mainactive > ul, .header__topcontent .right ul, .header__topcontent .left ul, .faqcontent__content ul, .pageheader__content h2 {
+.contactus__inner .text ul,
+.cartpage__paymentitem .header ul,
+.cartpage__body ul,
+.cartpage__header ul,
+.cartdesk__content ul,
+.shopdetails__content ul,
+.blogsingle__leavecoments--addreview .formarea form .reviewbtn .allreview ul,
+.blogsingle__comments .content ul,
+.blogsingle__author .author-content .text ul,
+.blogsingle__content .tagbutton-icon .tagicon ul,
+.blogsingle__content .tagbutton-icon .tagbutton ul,
+.blogsingle__content .heading ul,
+.blogsingle__catagory .content ul,
+.blogsingle__popularpost .postitem > ul,
+.feedback2__inner .text .profile .name ul,
+.feedback__inner .top .profile .star ul,
+.teamprofile__personalcontent .data > ul li .allicon ul,
+.teamprofile__personalcontent .data > ul,
+.team__inner .thumb .allicon ul,
+.portfoliosingle__right ul,
+.projectfilter__header ul,
+.servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul,
+.servicesingle__sidebar .allheading ul,
+.natureplant__content ul,
+.footer__news ul,
+.footer__link ul,
+.footer__about .text .allsocialicon ul,
+.header__nav .mainactive > ul li > ul li,
+.header__nav .mainactive > ul li > ul,
+.header__nav .mainactive > ul li,
+.header__nav .mainactive > ul,
+.header__topcontent .right ul,
+.header__topcontent .left ul,
+.faqcontent__content ul,
+.pageheader__content h2 {
   padding: 0 !important;
   margin: 0 !important;
 }
 
-.cartdesk__img, .shopdetails__innerthumb, .shoppage__item .thum, .blogsingle__search .search-area, .blog__inner .thumb, .blog__inner, .feedback2__inner .text .profile .thumb, .team__inner .thumb, .team__inner, .portfoliosingle__thumb, .projectfilter__item--itemproject, .projectfilter__item, .project__item .content, .project__item:after, .project__item, .service2__item, .footer__photo .allphoto .item, .footer__news ul li .thumb, .banner__content, .faqcontent__wrapper, .mission__inner .thumb,
+.cartdesk__img,
+.shopdetails__innerthumb,
+.shoppage__item .thum,
+.blogsingle__search .search-area,
+.blog__inner .thumb,
+.blog__inner,
+.feedback2__inner .text .profile .thumb,
+.team__inner .thumb,
+.team__inner,
+.portfoliosingle__thumb,
+.projectfilter__item--itemproject,
+.projectfilter__item,
+.project__item .content,
+.project__item:after,
+.project__item,
+.service2__item,
+.footer__photo .allphoto .item,
+.footer__news ul li .thumb,
+.banner__content,
+.faqcontent__wrapper,
+.mission__inner .thumb,
 .blogsingle__popularpost .postitem > ul > li .content h6 a,
 .blog__inner .content .text h6 a,
 .blog__inner .content .text h6,
@@ -298,11 +815,23 @@ textarea {
   overflow: hidden;
 }
 
-.cartpage__body ul li .remove i, .cartpage__body ul li .countadd .cart-plus-minus .qtybutton, .shopdetails__content .countadd .cart-plus-minus .qtybutton, .accordion-item .accordion-button, .team__inner .thumb .allicon .fixedicon i, .projectfilter__header ul li, .header__cart .cart-details .item .right .cros i, .header__cart .cart-details .close i, .header__bottom .right .ellepsis i, .header__bottom .right .bar i {
+.cartpage__body ul li .remove i,
+.cartpage__body ul li .countadd .cart-plus-minus .qtybutton,
+.shopdetails__content .countadd .cart-plus-minus .qtybutton,
+.accordion-item .accordion-button,
+.team__inner .thumb .allicon .fixedicon i,
+.projectfilter__header ul li,
+.header__cart .cart-details .item .right .cros i,
+.header__cart .cart-details .close i,
+.header__bottom .right .ellepsis i,
+.header__bottom .right .bar i {
   cursor: pointer;
 }
 
-a .testmonial .thum, .testmonial a .thum, a .feedback__inner .top .thumb, .feedback__inner .top a .thumb {
+a .testmonial .thum,
+.testmonial a .thum,
+a .feedback__inner .top .thumb,
+.feedback__inner .top a .thumb {
   width: 80px;
   height: 80px;
   -webkit-border-radius: 50%;
@@ -310,8 +839,64 @@ a .testmonial .thum, .testmonial a .thum, a .feedback__inner .top .thumb, .feedb
   border-radius: 50%;
 }
 
-.map iframe, .contactus__inner .thumb::after, .cartpage__paymentitem .content form .update button, .cartdesk__img img, .shopdetails__smallthumb img, .shopdetails__innerthumb img, .shoppage__item .thum:after, .shoppage__item .thum img, .testmonial__content, .testmonial .thum img, .skill__rightimg img, .skill__item .skillbar-container, .skill__item, .question__rightimg img, .blogsingle__comments .content ul li .img img, .blogsingle__author .author-content .thum img, .blogsingle__catagory .content ul li, .blogsingle__bodycontent .thum img, .blog__inner .thumb a img, .feedback2__inner .text .profile .thumb img, .feedback2__inner .icon::after, .feedback__inner .top .thumb img, .teamprofile__img img, .team__inner--innerpage2 .text, .team__inner .thumb::after, .team__inner .thumb img, .portfoliosingle__right ul li, .portfoliosingle__thumb img, .projectfilter__item::after, .project__item .thum img, .project__item .content, .project__item:after, .servicesingle__middle .midddleinner img, .servicesingle__top img, .servicesingle__sidebar .brouchore.brouchoreneedhelp .thumb img, .service2__item .thumb > img, .service__rightimg img, .service__inner .thumb::after, .counter__inner .thumb::after, .natureplant__innerimg .counteritem .thumb::after, .natureplant__gardingmake .item .thumb::after, .feature__inner .icon::after, .footer__photo .allphoto .item .inneritem, .footer__photo .allphoto .item a img, .footer__news ul li .thumb img, .header__nav .mainactive > ul li > ul li a, .faqcontent__innerimg img, .faqcontent__innerimg, .mission__inner .thumb img, .plybtn a:after, .plybtn a:before, .overly::after, .pluse_1,
-.pluse_2, .preloader, input, textarea, select,
+.map iframe,
+.contactus__inner .thumb::after,
+.cartpage__paymentitem .content form .update button,
+.cartdesk__img img,
+.shopdetails__smallthumb img,
+.shopdetails__innerthumb img,
+.shoppage__item .thum:after,
+.shoppage__item .thum img,
+.testmonial__content,
+.testmonial .thum img,
+.skill__rightimg img,
+.skill__item .skillbar-container,
+.skill__item,
+.question__rightimg img,
+.blogsingle__comments .content ul li .img img,
+.blogsingle__author .author-content .thum img,
+.blogsingle__catagory .content ul li,
+.blogsingle__bodycontent .thum img,
+.blog__inner .thumb a img,
+.feedback2__inner .text .profile .thumb img,
+.feedback2__inner .icon::after,
+.feedback__inner .top .thumb img,
+.teamprofile__img img,
+.team__inner--innerpage2 .text,
+.team__inner .thumb::after,
+.team__inner .thumb img,
+.portfoliosingle__right ul li,
+.portfoliosingle__thumb img,
+.projectfilter__item::after,
+.project__item .thum img,
+.project__item .content,
+.project__item:after,
+.servicesingle__middle .midddleinner img,
+.servicesingle__top img,
+.servicesingle__sidebar .brouchore.brouchoreneedhelp .thumb img,
+.service2__item .thumb > img,
+.service__rightimg img,
+.service__inner .thumb::after,
+.counter__inner .thumb::after,
+.natureplant__innerimg .counteritem .thumb::after,
+.natureplant__gardingmake .item .thumb::after,
+.feature__inner .icon::after,
+.footer__photo .allphoto .item .inneritem,
+.footer__photo .allphoto .item a img,
+.footer__news ul li .thumb img,
+.header__nav .mainactive > ul li > ul li a,
+.faqcontent__innerimg img,
+.faqcontent__innerimg,
+.mission__inner .thumb img,
+.plybtn a:after,
+.plybtn a:before,
+.overly::after,
+.pluse_1,
+.pluse_2,
+.preloader,
+input,
+textarea,
+select,
 .blogsingle__popularpost .postitem > ul > li .content h6 a,
 .blog__inner .content .text h6 a,
 .blog__inner .content .text h6,
@@ -320,12 +905,39 @@ a .testmonial .thum, .testmonial a .thum, a .feedback__inner .top .thumb, .feedb
   width: 100%;
 }
 
-.projectfilter__item a img, .projectfilter__item a, .natureplant__content--contentpage2 ul li, .header--headerpage2 {
+.projectfilter__item a img,
+.projectfilter__item a,
+.natureplant__content--contentpage2 ul li,
+.header--headerpage2 {
   width: 100% !important;
 }
 
-.contactus__inner .thumb::after, .shoppage__item .thum:after, .shoppage__item .thum img, .feedback2__inner .icon::after, .feedback::after, .projectfilter__item--itemproject, .projectfilter__item::after, .projectfilter__item a, .project__item:hover:after, .project__item:after, .service--servicepage3::before, .service--servicepage3::after, .service__inner .thumb::after, .counter__inner .thumb::after, .natureplant__innerimg .counteritem .thumb::after, .natureplant__gardingmake .item .thumb::after, .feature__inner .icon::after, .footer__photo .allphoto .item .inneritem, .faqcontent__innerimg img, .faqcontent__innerimg, .plybtn a:after, .plybtn a:before, .overly::after, .pluse_1,
-.pluse_2, .preloader {
+.contactus__inner .thumb::after,
+.shoppage__item .thum:after,
+.shoppage__item .thum img,
+.feedback2__inner .icon::after,
+.feedback::after,
+.projectfilter__item--itemproject,
+.projectfilter__item::after,
+.projectfilter__item a,
+.project__item:hover:after,
+.project__item:after,
+.service--servicepage3::before,
+.service--servicepage3::after,
+.service__inner .thumb::after,
+.counter__inner .thumb::after,
+.natureplant__innerimg .counteritem .thumb::after,
+.natureplant__gardingmake .item .thumb::after,
+.feature__inner .icon::after,
+.footer__photo .allphoto .item .inneritem,
+.faqcontent__innerimg img,
+.faqcontent__innerimg,
+.plybtn a:after,
+.plybtn a:before,
+.overly::after,
+.pluse_1,
+.pluse_2,
+.preloader {
   height: 100%;
 }
 
@@ -346,7 +958,42 @@ a .testmonial .thum, .testmonial a .thum, a .feedback__inner .top .thumb, .feedb
   font-weight: 700;
 }
 
-.cartpage__paymentitem .content form .totall ul li span, .cartpage__paymentitem .content p, .cartpage__paymentitem .header ul li, .cartpage__header ul li, .cartdesk__header nav .nav .nav-link, .shopdetails__content .rating p, .shoppage__item .content span, .skill__item .skill-title .right span, .skill__item .skill-title .left, .accordion-item .accordion-button, .blogsingle__content .tagbutton-icon .tagicon ul li:first-child, .blogsingle__content .tagbutton-icon .tagbutton ul li:first-child, .teamprofile__personalcontent .data > ul li span, .projectfilter__header ul li, .project__item .content .content-inner h6 a, .project__item .content .content-inner p, .servicesingle__middle .text h4, .servicesingle__top .text h4, .servicesingle__sidebar .allheading ul li a, .servicesingle__sidebar .allheading ul li, .service__inner .text a, .natureplant__innerimg .counteritem .text h5 span, .natureplant__gardingmake .item .text span, .custom-btn, .banner__content .bannerbtn a, .header__nav .mainactive > ul li a, .header__cart .cart-details .total .checkout a, .header__cart .cart-details .item .right .text p, .pagi .pagi-inner ul li a, .nav-pills .nav-link, .pageheader__content ul li.active, .pageheader__content ul li, .pageheader__content h2, .newslatter__form form button, .section__header span, h1,
+.cartpage__paymentitem .content form .totall ul li span,
+.cartpage__paymentitem .content p,
+.cartpage__paymentitem .header ul li,
+.cartpage__header ul li,
+.cartdesk__header nav .nav .nav-link,
+.shopdetails__content .rating p,
+.shoppage__item .content span,
+.skill__item .skill-title .right span,
+.skill__item .skill-title .left,
+.accordion-item .accordion-button,
+.blogsingle__content .tagbutton-icon .tagicon ul li:first-child,
+.blogsingle__content .tagbutton-icon .tagbutton ul li:first-child,
+.teamprofile__personalcontent .data > ul li span,
+.projectfilter__header ul li,
+.project__item .content .content-inner h6 a,
+.project__item .content .content-inner p,
+.servicesingle__middle .text h4,
+.servicesingle__top .text h4,
+.servicesingle__sidebar .allheading ul li a,
+.servicesingle__sidebar .allheading ul li,
+.service__inner .text a,
+.natureplant__innerimg .counteritem .text h5 span,
+.natureplant__gardingmake .item .text span,
+.custom-btn,
+.banner__content .bannerbtn a,
+.header__nav .mainactive > ul li a,
+.header__cart .cart-details .total .checkout a,
+.header__cart .cart-details .item .right .text p,
+.pagi .pagi-inner ul li a,
+.nav-pills .nav-link,
+.pageheader__content ul li.active,
+.pageheader__content ul li,
+.pageheader__content h2,
+.newslatter__form form button,
+.section__header span,
+h1,
 h2,
 h3,
 h4,
@@ -367,23 +1014,109 @@ a h6 {
   font-weight: 600;
 }
 
-.cartpage__paymentitem .content form .item label span, .cartpage__discountcode ::placeholder, .cartpage__body ul li .remove span, .cartpage__body ul li .total span, .cartpage__body ul li .price span, .shopdetails__content h6 span, .accordion-item .accordion-body p, .blogsingle__content .quode .text h6, .blogsingle__search .search-area ::placeholder, .teamprofile__personalcontent .data > ul li p, .portfoliosingle__right ul li p, .portfoliosingle__right ul li span, .servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li .textinner span, .counter__content h6, .natureplant__innerimg .counteritem .text h6, .header__cart .cart-details .total .subtotal p span, .header__topcontent .left ul li .text p {
+.cartpage__paymentitem .content form .item label span,
+.cartpage__discountcode ::placeholder,
+.cartpage__body ul li .remove span,
+.cartpage__body ul li .total span,
+.cartpage__body ul li .price span,
+.shopdetails__content h6 span,
+.accordion-item .accordion-body p,
+.blogsingle__content .quode .text h6,
+.blogsingle__search .search-area ::placeholder,
+.teamprofile__personalcontent .data > ul li p,
+.portfoliosingle__right ul li p,
+.portfoliosingle__right ul li span,
+.servicesingle__sidebar
+  .brouchore.brouchoreneedhelp
+  .text
+  ul
+  li
+  .textinner
+  span,
+.counter__content h6,
+.natureplant__innerimg .counteritem .text h6,
+.header__cart .cart-details .total .subtotal p span,
+.header__topcontent .left ul li .text p {
   font-weight: 500;
 }
 
-.contactus__inner .text ul li, .cartdesk__text .destext p, .cartdesk__text .nametext .profile span, .testmonial__content .profile .name span, .request__form form .allinput ::placeholder, .process__inner p, .blogsingle__leavecoments .formarea form .alliput ::placeholder, .blogsingle__comments .content ul li .commentsarea .name-replaybtn .name span, .blogsingle__author .author-content .text span, .blogsingle__content .heading ul li, .blogsingle__alltag .alltaginner a, .blogsingle__catagory .content ul li h6 a, .blogsingle__popularpost .postitem > ul > li .content span, .feedback__inner .top .profile .name span, .teamprofile__personalcontent span, .service__inner .text p, .faqcontent__content ul li {
+.contactus__inner .text ul li,
+.cartdesk__text .destext p,
+.cartdesk__text .nametext .profile span,
+.testmonial__content .profile .name span,
+.request__form form .allinput ::placeholder,
+.process__inner p,
+.blogsingle__leavecoments .formarea form .alliput ::placeholder,
+.blogsingle__comments .content ul li .commentsarea .name-replaybtn .name span,
+.blogsingle__author .author-content .text span,
+.blogsingle__content .heading ul li,
+.blogsingle__alltag .alltaginner a,
+.blogsingle__catagory .content ul li h6 a,
+.blogsingle__popularpost .postitem > ul > li .content span,
+.feedback__inner .top .profile .name span,
+.teamprofile__personalcontent span,
+.service__inner .text p,
+.faqcontent__content ul li {
   font-weight: 400;
 }
 
-.cartpage__body ul li .product .text h6 a, .shopdetails__content .rating a, .shoppage__item .content a, .blogsingle__comments .content ul li .commentsarea .name-replaybtn .replaybtn a, .blogsingle__author .author-content .text ul li a, .blogsingle__content .tagbutton-icon .tagbutton ul li a, .blogsingle__alltag .alltaginner a, .blogsingle__popularpost .postitem > ul > li .content h6 a, .blog__inner .content .text ul li a, .blog__inner .content .text ul li i, .blog__inner .content .text h6 a, .team__inner .text h6 a, .project__item .content .content-inner h6 a, .servicesingle__sidebar .allheading ul li a, .service2__item .text h6 a, .service__inner .text a, .footer__news ul li .text h6 a, .footer__link ul li a, .custom-btn, .header__nav .mainactive > ul li a, .header__cart .cart-details .total .checkout a, .header__cart .cart-details .item .right .text h6 a, .header__cart .carticon a, .pagi .pagi-inner ul li a, .pageheader__content ul li a {
+.cartpage__body ul li .product .text h6 a,
+.shopdetails__content .rating a,
+.shoppage__item .content a,
+.blogsingle__comments .content ul li .commentsarea .name-replaybtn .replaybtn a,
+.blogsingle__author .author-content .text ul li a,
+.blogsingle__content .tagbutton-icon .tagbutton ul li a,
+.blogsingle__alltag .alltaginner a,
+.blogsingle__popularpost .postitem > ul > li .content h6 a,
+.blog__inner .content .text ul li a,
+.blog__inner .content .text ul li i,
+.blog__inner .content .text h6 a,
+.team__inner .text h6 a,
+.project__item .content .content-inner h6 a,
+.servicesingle__sidebar .allheading ul li a,
+.service2__item .text h6 a,
+.service__inner .text a,
+.footer__news ul li .text h6 a,
+.footer__link ul li a,
+.custom-btn,
+.header__nav .mainactive > ul li a,
+.header__cart .cart-details .total .checkout a,
+.header__cart .cart-details .item .right .text h6 a,
+.header__cart .carticon a,
+.pagi .pagi-inner ul li a,
+.pageheader__content ul li a {
   text-decoration: none;
 }
 
-.cartpage__body ul li .countadd, .shoppage__item .content .allstar, .testmonial__header, .projectfilter__header ul, .counter__content .maincounter, .footer__photo .allphoto .item .inneritem, .banner__content--contentpage2 .bannerbtn, .header__nav .mainactive > ul, .header__topcontent, .pagi .pagi-inner, .nav-pills, .pageheader__content ul, .newslatter__form {
+.cartpage__body ul li .countadd,
+.shoppage__item .content .allstar,
+.testmonial__header,
+.projectfilter__header ul,
+.counter__content .maincounter,
+.footer__photo .allphoto .item .inneritem,
+.banner__content--contentpage2 .bannerbtn,
+.header__nav .mainactive > ul,
+.header__topcontent,
+.pagi .pagi-inner,
+.nav-pills,
+.pageheader__content ul,
+.newslatter__form {
   justify-content: center;
 }
 
-.cartpage__paymentitem .content form .totall ul li, .cartpage__paymentitem .content form .item label, .cartpage__paymentitem .header ul, .cartdesk__text .nametext, .testmonial__content .profile, .skill__item .skill-title, .blogsingle__comments .content ul li .commentsarea .name-replaybtn, .blogsingle__content .tagbutton-icon, .blogsingle__catagory .content ul li, .blogsingle__popularpost--relatedPost .postitem ul, .feedback__inner .top .profile, .header__cart .cart-details .total, .header__cart .cart-details .item .right {
+.cartpage__paymentitem .content form .totall ul li,
+.cartpage__paymentitem .content form .item label,
+.cartpage__paymentitem .header ul,
+.cartdesk__text .nametext,
+.testmonial__content .profile,
+.skill__item .skill-title,
+.blogsingle__comments .content ul li .commentsarea .name-replaybtn,
+.blogsingle__content .tagbutton-icon,
+.blogsingle__catagory .content ul li,
+.blogsingle__popularpost--relatedPost .postitem ul,
+.feedback__inner .top .profile,
+.header__cart .cart-details .total,
+.header__cart .cart-details .item .right {
   justify-content: space-between;
 }
 
@@ -391,7 +1124,54 @@ a h6 {
   justify-content: space-between !important;
 }
 
-.cartpage__paymentitem .content form .item, .cartpage__paymentitem .header ul, .cartpage__discountcode, .cartpage__body ul li .countadd .cart-plus-minus, .cartpage__body ul li .countadd, .cartpage__body ul li .product, .cartpage__body ul li, .cartdesk__text .nametext, .shopdetails__content .countadd .cart-plus-minus, .shopdetails__content .countadd, .shopdetails__content .rating, .shoppagenav .nav-tab, .shoppagenav, .testmonial__content .profile, .testmonial__item, .skill__item .skill-title, .blogsingle__leavecoments--addreview .formarea form .reviewbtn .allreview ul, .blogsingle__content .tagbutton-icon .tagicon ul, .blogsingle__content .tagbutton-icon .tagbutton ul, .blogsingle__content .tagbutton-icon, .blogsingle__catagory .content ul li, .blogsingle__catagory .content ul, .blogsingle__popularpost .postitem > ul > li, .blog__inner .content .text ul, .feedback2__inner .text .profile, .feedback__inner .top, .teamprofile__personalcontent .data > ul li, .portfoliosingle__right ul, .projectfilter__item .inneritem, .projectfilter__header ul, .servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li, .counter__content .maincounter, .natureplant__innerimg .counteritem, .natureplant__gardingmake .item, .footer__photo .allphoto .item .inneritem, .footer__photo .allphoto, .banner__content .bannerbtn, .header__nav .mainactive > ul, .header__cart .cart-details .total, .header__cart .cart-details .item .right, .header__cart .cart-details .item, .header__cart .cart-details, .header__bottom .right, .header__topcontent .right ul, .header__topcontent .left ul li, .header__topcontent .left ul, .header__topcontent, .newslatter__form form {
+.cartpage__paymentitem .content form .item,
+.cartpage__paymentitem .header ul,
+.cartpage__discountcode,
+.cartpage__body ul li .countadd .cart-plus-minus,
+.cartpage__body ul li .countadd,
+.cartpage__body ul li .product,
+.cartpage__body ul li,
+.cartdesk__text .nametext,
+.shopdetails__content .countadd .cart-plus-minus,
+.shopdetails__content .countadd,
+.shopdetails__content .rating,
+.shoppagenav .nav-tab,
+.shoppagenav,
+.testmonial__content .profile,
+.testmonial__item,
+.skill__item .skill-title,
+.blogsingle__leavecoments--addreview .formarea form .reviewbtn .allreview ul,
+.blogsingle__content .tagbutton-icon .tagicon ul,
+.blogsingle__content .tagbutton-icon .tagbutton ul,
+.blogsingle__content .tagbutton-icon,
+.blogsingle__catagory .content ul li,
+.blogsingle__catagory .content ul,
+.blogsingle__popularpost .postitem > ul > li,
+.blog__inner .content .text ul,
+.feedback2__inner .text .profile,
+.feedback__inner .top,
+.teamprofile__personalcontent .data > ul li,
+.portfoliosingle__right ul,
+.projectfilter__item .inneritem,
+.projectfilter__header ul,
+.servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li,
+.counter__content .maincounter,
+.natureplant__innerimg .counteritem,
+.natureplant__gardingmake .item,
+.footer__photo .allphoto .item .inneritem,
+.footer__photo .allphoto,
+.banner__content .bannerbtn,
+.header__nav .mainactive > ul,
+.header__cart .cart-details .total,
+.header__cart .cart-details .item .right,
+.header__cart .cart-details .item,
+.header__cart .cart-details,
+.header__bottom .right,
+.header__topcontent .right ul,
+.header__topcontent .left ul li,
+.header__topcontent .left ul,
+.header__topcontent,
+.newslatter__form form {
   align-items: center;
 }
 
@@ -406,15 +1186,29 @@ a h6 {
   -webkit-box-orient: vertical;
 }
 
-.accordion-item .accordion-button:after, .feedback .positionfeedback.righttop, .projectfilter__item .inneritem .upitem, .service__rightimg img, .banner .position_bshape.topright img, .banner .position_bshape.topleftimg img, .header__bottom.header-fixed .ellepsis {
+.accordion-item .accordion-button:after,
+.feedback .positionfeedback.righttop,
+.projectfilter__item .inneritem .upitem,
+.service__rightimg img,
+.banner .position_bshape.topright img,
+.banner .position_bshape.topleftimg img,
+.header__bottom.header-fixed .ellepsis {
   display: none;
 }
 
-.projectfilter .leftshape, .dnone {
+.projectfilter .leftshape,
+.dnone {
   display: none !important;
 }
 
-.cartpage__paymentitem .content form .checkout a, .cartpage__paymentitem .content form .update button, .shoppage__item .content a, .blogsingle__popularpost--popularpostshoppage .postitem ul li .content span, .servicesingle__sidebar .allheading ul li a, .servicesingle__sidebar .allheading ul li, .header__nav .mainactive > ul li > ul li a, .header__nav .mainactive > ul li a {
+.cartpage__paymentitem .content form .checkout a,
+.cartpage__paymentitem .content form .update button,
+.shoppage__item .content a,
+.blogsingle__popularpost--popularpostshoppage .postitem ul li .content span,
+.servicesingle__sidebar .allheading ul li a,
+.servicesingle__sidebar .allheading ul li,
+.header__nav .mainactive > ul li > ul li a,
+.header__nav .mainactive > ul li a {
   display: block;
 }
 
@@ -422,20 +1216,107 @@ a h6 {
   display: block !important;
 }
 
-.cartpage__body ul li .countadd a, .cartdesk__text .nametext .allstar .star i, .shoppage__item .content span, .shoppage__item .thum .shoppagelink a, .process__item .base, .blogsingle__leavecoments--addreview .formarea form .reviewbtn .allreview, .blogsingle__comments .content ul li .commentsarea .name-replaybtn .name span, .blogsingle__author .author-content .text span, .blogsingle__content .tagbutton-icon .tagicon ul li a, .blogsingle__alltag .alltaginner a, .blogsingle__popularpost--popularpostshoppage .postitem ul li .content a, .blogsingle__popularpost--relatedPost .postitem ul li .content span, .blogsingle__popularpost .postitem > ul > li .content span, .feedback__inner .bottom p, .teamprofile__personalcontent .data > ul li span, .teamprofile__personalcontent span, .team__inner .thumb .allicon ul li a, .projectfilter__btn a, .projectfilter__item .inneritem .upitem a, .project__btn a, .servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li .textinner span, .servicesingle__sidebar .brouchore .text a, .service2__item .text h6 a, .service__inner .text a, .natureplant__content a, .footer__photo .allphoto .item .inneritem .upitem a, .footer__about .text .allsocialicon ul li a, .custom-btn, .header__nav .mainactive > ul li > ul li::after, .header__cart .cart-details .total .checkout a, .header__cart .cart-details .item .right .text span, .header__topcontent .right ul li a, .pagi .pagi-inner ul li a, .newslatter__form form input, .plybtn a {
+.cartpage__body ul li .countadd a,
+.cartdesk__text .nametext .allstar .star i,
+.shoppage__item .content span,
+.shoppage__item .thum .shoppagelink a,
+.process__item .base,
+.blogsingle__leavecoments--addreview .formarea form .reviewbtn .allreview,
+.blogsingle__comments .content ul li .commentsarea .name-replaybtn .name span,
+.blogsingle__author .author-content .text span,
+.blogsingle__content .tagbutton-icon .tagicon ul li a,
+.blogsingle__alltag .alltaginner a,
+.blogsingle__popularpost--popularpostshoppage .postitem ul li .content a,
+.blogsingle__popularpost--relatedPost .postitem ul li .content span,
+.blogsingle__popularpost .postitem > ul > li .content span,
+.feedback__inner .bottom p,
+.teamprofile__personalcontent .data > ul li span,
+.teamprofile__personalcontent span,
+.team__inner .thumb .allicon ul li a,
+.projectfilter__btn a,
+.projectfilter__item .inneritem .upitem a,
+.project__btn a,
+.servicesingle__sidebar
+  .brouchore.brouchoreneedhelp
+  .text
+  ul
+  li
+  .textinner
+  span,
+.servicesingle__sidebar .brouchore .text a,
+.service2__item .text h6 a,
+.service__inner .text a,
+.natureplant__content a,
+.footer__photo .allphoto .item .inneritem .upitem a,
+.footer__about .text .allsocialicon ul li a,
+.custom-btn,
+.header__nav .mainactive > ul li > ul li::after,
+.header__cart .cart-details .total .checkout a,
+.header__cart .cart-details .item .right .text span,
+.header__topcontent .right ul li a,
+.pagi .pagi-inner ul li a,
+.newslatter__form form input,
+.plybtn a {
   display: inline-block;
 }
 
 /* @@@@@@@@@@@@@  Extend Property CSS Writing Now  @@@@@@@@@@@@@@ */
-.cartpage__paymentitem .content form .update button, .cartpage__discountcode button, .request__form form button, .blogsingle__leavecoments .formarea form button, .header__nav .mainactive > ul li > ul li:last-child, .header__topcontent--topcontentpage2 .left ul li:nth-child(2), .newslatter__form form button {
+.cartpage__paymentitem .content form .update button,
+.cartpage__discountcode button,
+.request__form form button,
+.blogsingle__leavecoments .formarea form button,
+.header__nav .mainactive > ul li > ul li:last-child,
+.header__topcontent--topcontentpage2 .left ul li:nth-child(2),
+.newslatter__form form button {
   border: none;
 }
 
-.cartdesk__header nav .nav .nav-link, .cartdesk__header nav .nav, .accordion-item, .blogsingle__leavecoments--addreview, .blogsingle__popularpost--relatedPost .postitem ul li, .servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li:last-child {
+.cartdesk__header nav .nav .nav-link,
+.cartdesk__header nav .nav,
+.accordion-item,
+.blogsingle__leavecoments--addreview,
+.blogsingle__popularpost--relatedPost .postitem ul li,
+.servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li:last-child {
   border: none !important;
 }
 
-.cartpage__paymentitem .content form .totall ul li span, .cartpage__paymentitem .content form .update button, .cartpage__paymentitem .content form .country select option, .cartpage__paymentitem .content form .item label span, .cartpage__paymentitem .content form .item label, .cartpage__paymentitem .content p, .cartpage__paymentitem .header ul li, .cartpage__header ul li, .cartdesk__header nav .nav .nav-link, .shopdetails__content .rating p, .skill__item .skill-title .left, .accordion-item .accordion-button, .blogsingle__leavecoments .formarea form button, .blogsingle__leavecoments .formarea form .alliput ::placeholder, .blogsingle__comments .content ul li .commentsarea .name-replaybtn .replaybtn a, .blogsingle__author .author-content .text span, .blogsingle__content .tagbutton-icon .tagbutton ul li, .blogsingle__content .heading ul li, .blogsingle__alltag .alltaginner a, .blogsingle__search .search-area ::placeholder, .teamprofile__personalcontent span, .projectfilter__header ul li, .project__item .content .content-inner h6 a, .servicesingle__middle .text h4, .servicesingle__sidebar .allheading ul li, .custom-btn, .header__nav .mainactive > ul li, .pagi .pagi-inner ul li a, .faqcontent__content ul li, .nav-pills .nav-link, .pageheader__content ul li, .section__header h3, .section__header span, input::placeholder, textarea::placeholder, select::placeholder, h1,
+.cartpage__paymentitem .content form .totall ul li span,
+.cartpage__paymentitem .content form .update button,
+.cartpage__paymentitem .content form .country select option,
+.cartpage__paymentitem .content form .item label span,
+.cartpage__paymentitem .content form .item label,
+.cartpage__paymentitem .content p,
+.cartpage__paymentitem .header ul li,
+.cartpage__header ul li,
+.cartdesk__header nav .nav .nav-link,
+.shopdetails__content .rating p,
+.skill__item .skill-title .left,
+.accordion-item .accordion-button,
+.blogsingle__leavecoments .formarea form button,
+.blogsingle__leavecoments .formarea form .alliput ::placeholder,
+.blogsingle__comments .content ul li .commentsarea .name-replaybtn .replaybtn a,
+.blogsingle__author .author-content .text span,
+.blogsingle__content .tagbutton-icon .tagbutton ul li,
+.blogsingle__content .heading ul li,
+.blogsingle__alltag .alltaginner a,
+.blogsingle__search .search-area ::placeholder,
+.teamprofile__personalcontent span,
+.projectfilter__header ul li,
+.project__item .content .content-inner h6 a,
+.servicesingle__middle .text h4,
+.servicesingle__sidebar .allheading ul li,
+.custom-btn,
+.header__nav .mainactive > ul li,
+.pagi .pagi-inner ul li a,
+.faqcontent__content ul li,
+.nav-pills .nav-link,
+.pageheader__content ul li,
+.section__header h3,
+.section__header span,
+input::placeholder,
+textarea::placeholder,
+select::placeholder,
+h1,
 h2,
 h3,
 h4,
@@ -456,29 +1337,117 @@ a h6 {
   text-transform: capitalize;
 }
 
-.header__nav .mainactive > ul li > ul li a, .header__nav .mainactive > ul li a, .newslatter__form form button {
+.header__nav .mainactive > ul li > ul li a,
+.header__nav .mainactive > ul li a,
+.newslatter__form form button {
   text-transform: uppercase;
 }
 
 /* @@@@@@@@@@@@@  Extend Property CSS Writing Now  @@@@@@@@@@@@@@ */
-.feedback::after, .project, .service--servicepage3::after, .counter, .footer, .pageheader, .newslatter__bg {
+.feedback::after,
+.project,
+.service--servicepage3::after,
+.counter,
+.footer,
+.pageheader,
+.newslatter__bg {
   background-size: cover !important;
 }
 
-.feedback2__inner .icon, .feedback::after, .project, .service, .counter, .natureplant, .footer, .pageheader, .newslatter__bg, .preloader {
+.feedback2__inner .icon,
+.feedback::after,
+.project,
+.service,
+.counter,
+.natureplant,
+.footer,
+.pageheader,
+.newslatter__bg,
+.preloader {
   background-repeat: no-repeat !important;
 }
 
-.cartpage__body ul li .countadd .cart-plus-minus .qtybutton:hover, .cartdesk__header nav .nav .nav-link.active, .shopdetails__content .countadd .cart-plus-minus .qtybutton:hover, .shoppagenav .nav-tab .nav-link, .shoppagenav h6, .testmonial .thum, .accordion-item--itme2Serpage .accordion-button, .blogsingle__leavecoments .formarea form textarea, .blogsingle__leavecoments .formarea form .alliput ::placeholder, .blogsingle__comments .content ul li .commentsarea .name-replaybtn .replaybtn a, .blogsingle__content .tagbutton-icon .tagicon ul li a i, .blogsingle__content .quode .text h6, .blogsingle__alltag .alltaginner a:hover, .blog__inner .content .blogbtn a, .feedback__inner .top .thumb, .teamprofile__personalcontent .data > ul li .allicon ul li a:hover i, .teamprofile__personalcontent .data > ul li .allicon ul li a:hover, .team__inner--innerpage2 .text p, .team__inner--innerpage2 .text h6, .team__inner .thumb .allicon ul li a i, .team__inner .thumb .allicon .fixedicon i, .projectfilter__item .inneritem .upitem a:hover i, .projectfilter__header ul li.active, .project__item .content .content-inner h6 a, .project__item .content .content-inner p, .counter__content h6, .counter__content .maincounter span, .counter__content .maincounter h3, .footer__photo .allphoto .item .inneritem .upitem a i, .footer__about .text .allsocialicon ul li a i, .custom-btn, .banner__content--contentpage3 p, .banner__content--contentpage3 h3, .banner__content--contentpage2 p, .banner__content--contentpage2 h3, .header__nav .mainactive > ul li > ul li:hover > a, .header__nav .mainactive > ul li > ul li::after, .header__cart .cart-details .item .right .text span, .header__cart .cart-details .close i, .header__cart .carticon:after, .header__topcontent .right ul li a i, .pagi .pagi-inner ul li:last-child a:hover i, .pagi .pagi-inner ul li:first-child a:hover i, .pagi .pagi-inner ul li a:hover, .pagi .pagi-inner ul li a.active, .pageheader__content ul li a, .pageheader__content h2, .newslatter .text h3, .newslatter__form form button, .plybtn a i, .swiper-button-next:after,
+.cartpage__body ul li .countadd .cart-plus-minus .qtybutton:hover,
+.cartdesk__header nav .nav .nav-link.active,
+.shopdetails__content .countadd .cart-plus-minus .qtybutton:hover,
+.shoppagenav .nav-tab .nav-link,
+.shoppagenav h6,
+.testmonial .thum,
+.accordion-item--itme2Serpage .accordion-button,
+.blogsingle__leavecoments .formarea form textarea,
+.blogsingle__leavecoments .formarea form .alliput ::placeholder,
+.blogsingle__comments .content ul li .commentsarea .name-replaybtn .replaybtn a,
+.blogsingle__content .tagbutton-icon .tagicon ul li a i,
+.blogsingle__content .quode .text h6,
+.blogsingle__alltag .alltaginner a:hover,
+.blog__inner .content .blogbtn a,
+.feedback__inner .top .thumb,
+.teamprofile__personalcontent .data > ul li .allicon ul li a:hover i,
+.teamprofile__personalcontent .data > ul li .allicon ul li a:hover,
+.team__inner--innerpage2 .text p,
+.team__inner--innerpage2 .text h6,
+.team__inner .thumb .allicon ul li a i,
+.team__inner .thumb .allicon .fixedicon i,
+.projectfilter__item .inneritem .upitem a:hover i,
+.projectfilter__header ul li.active,
+.project__item .content .content-inner h6 a,
+.project__item .content .content-inner p,
+.counter__content h6,
+.counter__content .maincounter span,
+.counter__content .maincounter h3,
+.footer__photo .allphoto .item .inneritem .upitem a i,
+.footer__about .text .allsocialicon ul li a i,
+.custom-btn,
+.banner__content--contentpage3 p,
+.banner__content--contentpage3 h3,
+.banner__content--contentpage2 p,
+.banner__content--contentpage2 h3,
+.header__nav .mainactive > ul li > ul li:hover > a,
+.header__nav .mainactive > ul li > ul li::after,
+.header__cart .cart-details .item .right .text span,
+.header__cart .cart-details .close i,
+.header__cart .carticon:after,
+.header__topcontent .right ul li a i,
+.pagi .pagi-inner ul li:last-child a:hover i,
+.pagi .pagi-inner ul li:first-child a:hover i,
+.pagi .pagi-inner ul li a:hover,
+.pagi .pagi-inner ul li a.active,
+.pageheader__content ul li a,
+.pageheader__content h2,
+.newslatter .text h3,
+.newslatter__form form button,
+.plybtn a i,
+.swiper-button-next:after,
 .swiper-button-prev:after {
   color: #fff;
 }
 
-.accordion-item--itme2Serpage .accordion-button:not(.collapsed), .header__topcontent--topcontentpage2 .left ul li .text p, .header__topcontent--topcontentpage2 .left ul li .icon i {
+.accordion-item--itme2Serpage .accordion-button:not(.collapsed),
+.header__topcontent--topcontentpage2 .left ul li .text p,
+.header__topcontent--topcontentpage2 .left ul li .icon i {
   color: #fff !important;
 }
 
-.shoppagenav .nav-tab .nav-link.active, .shoppage__item .thum .shoppagelink a, .testmonial .thum, .request__form form textarea, .request__form form .allinput input, .accordion-item--itme2Serpage .accordion-button:not(.collapsed) .plus-icon, .accordion-item--itme2Serpage .accordion-body, .accordion-item--itme2Serpage .accordion-button .plus-icon, .accordion-item .accordion-button:not(.collapsed) .plus-icon, .accordion-item .accordion-button:not(.collapsed), .accordion-item .accordion-button, .blogsingle__leavecoments--addreview .formarea form .alliput textarea, .feedback2__inner .icon, .feedback__inner .top .thumb, .projectfilter__item .inneritem .upitem a, .natureplant__innerimg .counteritem, .footer__photo .allphoto .item .inneritem .upitem a:hover, .header__cart .cart-details, .pageheader__content ul li a:after, body,
+.shoppagenav .nav-tab .nav-link.active,
+.shoppage__item .thum .shoppagelink a,
+.testmonial .thum,
+.request__form form textarea,
+.request__form form .allinput input,
+.accordion-item--itme2Serpage .accordion-button:not(.collapsed) .plus-icon,
+.accordion-item--itme2Serpage .accordion-body,
+.accordion-item--itme2Serpage .accordion-button .plus-icon,
+.accordion-item .accordion-button:not(.collapsed) .plus-icon,
+.accordion-item .accordion-button:not(.collapsed),
+.accordion-item .accordion-button,
+.blogsingle__leavecoments--addreview .formarea form .alliput textarea,
+.feedback2__inner .icon,
+.feedback__inner .top .thumb,
+.projectfilter__item .inneritem .upitem a,
+.natureplant__innerimg .counteritem,
+.footer__photo .allphoto .item .inneritem .upitem a:hover,
+.header__cart .cart-details,
+.pageheader__content ul li a:after,
+body,
 button,
 input,
 select,
@@ -487,7 +1456,12 @@ textarea {
   background: #fff;
 }
 
-.shopdetails__content .rating p, .shopdetails__content h6, .projectfilter__header ul li, .header__nav .mainactive > ul li a, .header__cart .cart-details .total .checkout a, .header__cart .cart-details .item .right .text h6 a {
+.shopdetails__content .rating p,
+.shopdetails__content h6,
+.projectfilter__header ul li,
+.header__nav .mainactive > ul li a,
+.header__cart .cart-details .total .checkout a,
+.header__cart .cart-details .item .right .text h6 a {
   color: #000000;
 }
 
@@ -495,7 +1469,26 @@ textarea {
   background: #000000;
 }
 
-.shoppagenav .nav-tab .nav-link.active, .shoppage__item .thum .shoppagelink a, .testmonial .thum, .request__form form textarea, .request__form form .allinput input, .accordion-item--itme2Serpage .accordion-button:not(.collapsed) .plus-icon, .accordion-item--itme2Serpage .accordion-body, .accordion-item--itme2Serpage .accordion-button .plus-icon, .accordion-item .accordion-button:not(.collapsed) .plus-icon, .accordion-item .accordion-button:not(.collapsed), .accordion-item .accordion-button, .blogsingle__leavecoments--addreview .formarea form .alliput textarea, .feedback2__inner .icon, .feedback__inner .top .thumb, .projectfilter__item .inneritem .upitem a, .natureplant__innerimg .counteritem, .footer__photo .allphoto .item .inneritem .upitem a:hover, .header__cart .cart-details, .pageheader__content ul li a:after, body,
+.shoppagenav .nav-tab .nav-link.active,
+.shoppage__item .thum .shoppagelink a,
+.testmonial .thum,
+.request__form form textarea,
+.request__form form .allinput input,
+.accordion-item--itme2Serpage .accordion-button:not(.collapsed) .plus-icon,
+.accordion-item--itme2Serpage .accordion-body,
+.accordion-item--itme2Serpage .accordion-button .plus-icon,
+.accordion-item .accordion-button:not(.collapsed) .plus-icon,
+.accordion-item .accordion-button:not(.collapsed),
+.accordion-item .accordion-button,
+.blogsingle__leavecoments--addreview .formarea form .alliput textarea,
+.feedback2__inner .icon,
+.feedback__inner .top .thumb,
+.projectfilter__item .inneritem .upitem a,
+.natureplant__innerimg .counteritem,
+.footer__photo .allphoto .item .inneritem .upitem a:hover,
+.header__cart .cart-details,
+.pageheader__content ul li a:after,
+body,
 button,
 input,
 select,
@@ -505,42 +1498,277 @@ textarea {
 }
 
 .skill__item .skillbar-container {
-  background-color: #F8F5F0;
+  background-color: #f8f5f0;
 }
 
-.shoppage__item .content a, .request__form form .allinput ::placeholder, .accordion-item .accordion-button, .blog__inner .content .text ul li a, .teamprofile__personalcontent .data > ul li span, .team__inner .text h6 a, .portfoliosingle__right ul li p, .servicesingle__middle .text h4, .servicesingle__top .text h4, .servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li .textinner h6, .servicesingle__sidebar .allheading ul li a, .service__inner .text a, .footer__link ul li a, .header__topcontent .left ul li .text p, .faqcontent__content h4, .nav-pills .nav-link {
-  color: #1E1E1E;
+.shoppage__item .content a,
+.request__form form .allinput ::placeholder,
+.accordion-item .accordion-button,
+.blog__inner .content .text ul li a,
+.teamprofile__personalcontent .data > ul li span,
+.team__inner .text h6 a,
+.portfoliosingle__right ul li p,
+.servicesingle__middle .text h4,
+.servicesingle__top .text h4,
+.servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li .textinner h6,
+.servicesingle__sidebar .allheading ul li a,
+.service__inner .text a,
+.footer__link ul li a,
+.header__topcontent .left ul li .text p,
+.faqcontent__content h4,
+.nav-pills .nav-link {
+  color: #1e1e1e;
 }
 
-.contactus__inner .text ul li span, .contactus__inner .thumb i, .cartpage__paymentitem .content form .totall ul li span:last-child, .cartpage__paymentitem .content form .totall ul li span, .cartpage__paymentitem .content form .update button, .cartpage__paymentitem .content form .country p, .cartpage__paymentitem .header ul li:last-child, .cartpage__body ul li .remove i, .cartpage__header ul li, .cartdesk__content ul li i, .cartdesk__header nav .nav .nav-link, .cartdesk__text .nametext .allstar .star i, .shopdetails__content ul li i, .shopdetails__content .rating span i, .shopdetails__content h6 span, .shoppagenav .nav-tab .nav-link.active, .shoppage__item .content .allstar i, .shoppage__item .thum .shoppagelink a i, .shoppage__item:hover .content a, .testmonial__content .profile .star ul li i, .skill__item .skill-title .right span, .process__inner:hover h6, .blogsingle__leavecoments--addreview .formarea form .alliput input, .blogsingle__author .author-content .text ul li a, .blogsingle__content .tagbutton-icon .tagbutton ul li a:hover, .blogsingle__content .heading ul li i, .blogsingle__catagory .content ul li:hover span, .blogsingle__catagory .content ul li:hover h6 a, .blogsingle__popularpost .postitem > ul > li:hover .content h6 a, .blogsingle__search .search-area .icon i, .blog__inner:hover .content .text h6 a, .blog__inner .content .text ul li i, .feedback2__inner:hover .text .profile .name h6, .feedback2__inner .text .profile .name ul li i, .feedback__inner .top .profile .star ul li i, .teamprofile__personalcontent .data > ul li .allicon ul li a i, .team__inner:hover .text h6 a, .team__inner .thumb .allicon ul li a:hover i, .portfoliosingle__right ul li span, .projectfilter__item .inneritem .upitem a i, .project__item:hover .content .content-inner h6 a, .servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li .icon i, .servicesingle__sidebar .allheading ul li a i, .service2__item:hover h6 a, .service__inner:hover .text a, .service__inner:hover .text h6 a, .natureplant__innerimg .counteritem .text h5 span, .natureplant__gardingmake .item .text span, .natureplant__content ul li i, .feature__inner:hover .text h6, .footer__photo .allphoto .item .inneritem .upitem a:hover i, .footer__news ul li:hover .text h6 a, .footer__news ul li .text p, .footer__link ul li:hover a, .footer__link ul li i, .header .menu-item-has-children.open > a::after, .header .menu-item-has-children.open > a::before, .header__nav .mainactive > ul li > ul li:hover::after, .header__cart .cart-details .total .subtotal p span, .header__cart .cart-details .item:hover .right .text h6 a, .header__cart .cart-details .item .right .text p, .header__cart .carticon a i, .header__bottom .right .ellepsis i, .header__bottom .right .bar i, .header__topcontent--topcontentpage2 .right ul li a i, .header__topcontent .left ul li .icon i, .pagi .pagi-inner ul li:last-child a i, .pagi .pagi-inner ul li:first-child a i, .pagi .pagi-inner ul li a, .pageheader__content ul li.active, .fourzero__content form i, .section__header span {
-  color: #73B611;
+.contactus__inner .text ul li span,
+.contactus__inner .thumb i,
+.cartpage__paymentitem .content form .totall ul li span:last-child,
+.cartpage__paymentitem .content form .totall ul li span,
+.cartpage__paymentitem .content form .update button,
+.cartpage__paymentitem .content form .country p,
+.cartpage__paymentitem .header ul li:last-child,
+.cartpage__body ul li .remove i,
+.cartpage__header ul li,
+.cartdesk__content ul li i,
+.cartdesk__header nav .nav .nav-link,
+.cartdesk__text .nametext .allstar .star i,
+.shopdetails__content ul li i,
+.shopdetails__content .rating span i,
+.shopdetails__content h6 span,
+.shoppagenav .nav-tab .nav-link.active,
+.shoppage__item .content .allstar i,
+.shoppage__item .thum .shoppagelink a i,
+.shoppage__item:hover .content a,
+.testmonial__content .profile .star ul li i,
+.skill__item .skill-title .right span,
+.process__inner:hover h6,
+.blogsingle__leavecoments--addreview .formarea form .alliput input,
+.blogsingle__author .author-content .text ul li a,
+.blogsingle__content .tagbutton-icon .tagbutton ul li a:hover,
+.blogsingle__content .heading ul li i,
+.blogsingle__catagory .content ul li:hover span,
+.blogsingle__catagory .content ul li:hover h6 a,
+.blogsingle__popularpost .postitem > ul > li:hover .content h6 a,
+.blogsingle__search .search-area .icon i,
+.blog__inner:hover .content .text h6 a,
+.blog__inner .content .text ul li i,
+.feedback2__inner:hover .text .profile .name h6,
+.feedback2__inner .text .profile .name ul li i,
+.feedback__inner .top .profile .star ul li i,
+.teamprofile__personalcontent .data > ul li .allicon ul li a i,
+.team__inner:hover .text h6 a,
+.team__inner .thumb .allicon ul li a:hover i,
+.portfoliosingle__right ul li span,
+.projectfilter__item .inneritem .upitem a i,
+.project__item:hover .content .content-inner h6 a,
+.servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li .icon i,
+.servicesingle__sidebar .allheading ul li a i,
+.service2__item:hover h6 a,
+.service__inner:hover .text a,
+.service__inner:hover .text h6 a,
+.natureplant__innerimg .counteritem .text h5 span,
+.natureplant__gardingmake .item .text span,
+.natureplant__content ul li i,
+.feature__inner:hover .text h6,
+.footer__photo .allphoto .item .inneritem .upitem a:hover i,
+.footer__news ul li:hover .text h6 a,
+.footer__news ul li .text p,
+.footer__link ul li:hover a,
+.footer__link ul li i,
+.header .menu-item-has-children.open > a::after,
+.header .menu-item-has-children.open > a::before,
+.header__nav .mainactive > ul li > ul li:hover::after,
+.header__cart .cart-details .total .subtotal p span,
+.header__cart .cart-details .item:hover .right .text h6 a,
+.header__cart .cart-details .item .right .text p,
+.header__cart .carticon a i,
+.header__bottom .right .ellepsis i,
+.header__bottom .right .bar i,
+.header__topcontent--topcontentpage2 .right ul li a i,
+.header__topcontent .left ul li .icon i,
+.pagi .pagi-inner ul li:last-child a i,
+.pagi .pagi-inner ul li:first-child a i,
+.pagi .pagi-inner ul li a,
+.pageheader__content ul li.active,
+.fourzero__content form i,
+.section__header span {
+  color: #73b611;
 }
 
-.blogsingle__leavecoments--addreview .formarea form .alliput ::placeholder, .blogsingle__content .tagbutton-icon .tagicon ul li:first-child, .blogsingle__content .tagbutton-icon .tagbutton ul li:first-child {
-  color: #73B611;
+.blogsingle__leavecoments--addreview .formarea form .alliput ::placeholder,
+.blogsingle__content .tagbutton-icon .tagicon ul li:first-child,
+.blogsingle__content .tagbutton-icon .tagbutton ul li:first-child {
+  color: #73b611;
 }
 
-.cartdesk__header nav .nav .nav-link, .testmonial__item, .process__item .base, .process__inner, .blogsingle__search .search-area input, .servicesingle__sidebar .brouchore .pdf-icon, .servicesingle__sidebar .allheading ul li, .service--historypage, .swiper-pagination-bullet-active, .header__cart .cart-details .total .checkout a, .pagi .pagi-inner ul li a, .newslatter__form form input, .fourzero__content form input, body {
-  background: #F8F5F0;
+.cartdesk__header nav .nav .nav-link,
+.testmonial__item,
+.process__item .base,
+.process__inner,
+.blogsingle__search .search-area input,
+.servicesingle__sidebar .brouchore .pdf-icon,
+.servicesingle__sidebar .allheading ul li,
+.service--historypage,
+.swiper-pagination-bullet-active,
+.header__cart .cart-details .total .checkout a,
+.pagi .pagi-inner ul li a,
+.newslatter__form form input,
+.fourzero__content form input,
+body {
+  background: #f8f5f0;
 }
 
-.cartpage__body ul li .countadd .cart-plus-minus .qtybutton:hover, .cartdesk__header nav .nav .nav-link.active, .shopdetails__content .countadd .cart-plus-minus .qtybutton:hover, .shoppagenav, .shoppage__item .thum:after, .testmonial .thum .quode, .accordion-item--itme2Serpage .accordion-button:not(.collapsed), .accordion-item--itme2Serpage .accordion-button .plus-icon:before, .accordion-item--itme2Serpage .accordion-button .plus-icon:after, .accordion-item .accordion-button .plus-icon:active, .accordion-item .accordion-button .plus-icon, .blogsingle__leavecoments .formarea form textarea, .blogsingle__leavecoments .formarea form .alliput input, .blogsingle__alltag .alltaginner a:hover, .teamprofile__personalcontent .data > ul li .allicon ul li a:hover, .team__inner .thumb .allicon .fixedicon:hover i, .projectfilter__header ul li.active, .service2__item .thumb .icon, .footer__photo .allphoto .item .inneritem .upitem a, .footer__about .text .allsocialicon ul li a:hover, .custom-btn, .header .menu-item-has-children > a::before, .header .menu-item-has-children > a::after, .header__nav .mainactive > ul li > ul li:hover > a, .header__nav .mainactive > ul li > ul li a.active, .header__cart .cart-details .close i, .header__topcontent--topcontentpage2 .right ul li a:hover, .header__topcontent .right ul li a:hover, .pagi .pagi-inner ul li a:hover, .pagi .pagi-inner ul li a.active, .nav-pills .nav-link.active, .newslatter__form form button, .plybtn a:after, .plybtn a:before, .plybtn a {
-  background: #73B611;
+.cartpage__body ul li .countadd .cart-plus-minus .qtybutton:hover,
+.cartdesk__header nav .nav .nav-link.active,
+.shopdetails__content .countadd .cart-plus-minus .qtybutton:hover,
+.shoppagenav,
+.shoppage__item .thum:after,
+.testmonial .thum .quode,
+.accordion-item--itme2Serpage .accordion-button:not(.collapsed),
+.accordion-item--itme2Serpage .accordion-button .plus-icon:before,
+.accordion-item--itme2Serpage .accordion-button .plus-icon:after,
+.accordion-item .accordion-button .plus-icon:active,
+.accordion-item .accordion-button .plus-icon,
+.blogsingle__leavecoments .formarea form textarea,
+.blogsingle__leavecoments .formarea form .alliput input,
+.blogsingle__alltag .alltaginner a:hover,
+.teamprofile__personalcontent .data > ul li .allicon ul li a:hover,
+.team__inner .thumb .allicon .fixedicon:hover i,
+.projectfilter__header ul li.active,
+.service2__item .thumb .icon,
+.footer__photo .allphoto .item .inneritem .upitem a,
+.footer__about .text .allsocialicon ul li a:hover,
+.custom-btn,
+.header .menu-item-has-children > a::before,
+.header .menu-item-has-children > a::after,
+.header__nav .mainactive > ul li > ul li:hover > a,
+.header__nav .mainactive > ul li > ul li a.active,
+.header__cart .cart-details .close i,
+.header__topcontent--topcontentpage2 .right ul li a:hover,
+.header__topcontent .right ul li a:hover,
+.pagi .pagi-inner ul li a:hover,
+.pagi .pagi-inner ul li a.active,
+.nav-pills .nav-link.active,
+.newslatter__form form button,
+.plybtn a:after,
+.plybtn a:before,
+.plybtn a {
+  background: #73b611;
 }
 
-.accordion-item .accordion-button:not(.collapsed) .plus-icon:after, .projectfilter__item .inneritem .upitem a:hover, .header__top--toppage2 {
-  background: #73B611 !important;
+.accordion-item .accordion-button:not(.collapsed) .plus-icon:after,
+.projectfilter__item .inneritem .upitem a:hover,
+.header__top--toppage2 {
+  background: #73b611 !important;
 }
 
-.contactus__inner, .cartpage__paymentitem .content form .checkout a, .cartpage__paymentitem .content form .update button, .cartpage__body ul li .countadd .cart-plus-minus input.cart-plus-minus-box, .cartpage__body ul li, .cartpage__header ul li, .cartdesk__itemheading, .shopdetails__content .countadd a, .shopdetails__content .countadd .cart-plus-minus .qtybutton, .shopdetails__content .countadd .cart-plus-minus input.cart-plus-minus-box, .shopdetails__innerthumb, .shoppage__item .content, .shoppage__item .thum .shoppagelink a, .testmonial .thum .quode, .testmonial__header, .skill__item .skillbar-container, .request__header--headercontactpage, .request__form--contactpage p, .request__form--contactpage form, .process__inner, .process__header, .blogsingle__content .tagbutton-icon .tagicon ul li a, .blogsingle__content .quode .text h6, .blogsingle__content .quode .icon, .feedback2__inner .icon, .teamprofile__personalcontent .data > ul li .allicon ul li a, .team__inner .text, .team__inner .thumb .allicon ul li a, .team__inner .thumb .allicon .fixedicon i, .projectfilter__btn a, .projectfilter__btn, .projectfilter__item .inneritem .upitem a, .project__btn, .project__item .content .content-inner, .servicesingle__sidebar .brouchore .pdf-icon, .service2__item .text, .service2__item .thumb .icon, .service2__header p, .service2__header, .service__inner .thumb, .counter__inner .thumb, .counter__inner, .natureplant__innerimg .counteritem .thumb, .natureplant__gardingmake .item .thumb, .feature__inner, .footer__bottom, .footer__photo .allphoto .item .inneritem .upitem a, .footer__about .text .allsocialicon ul li a, .banner__content--contentpage2, .header__nav .mainactive > ul li > ul li::after, .header__cart .cart-details .item .right .text span, .header__cart .cart-details .close i, .header__cart .carticon:after, .header__topcontent .right ul li a, .pagi .pagi-inner ul li a, .faqcontent__header, .mission__inner .text, .pageheader__content, .newslatter .text h3, .partner__inner, .partner__item, .plybtn a, .scrollToTop, .section__header--header2 {
+.contactus__inner,
+.cartpage__paymentitem .content form .checkout a,
+.cartpage__paymentitem .content form .update button,
+.cartpage__body ul li .countadd .cart-plus-minus input.cart-plus-minus-box,
+.cartpage__body ul li,
+.cartpage__header ul li,
+.cartdesk__itemheading,
+.shopdetails__content .countadd a,
+.shopdetails__content .countadd .cart-plus-minus .qtybutton,
+.shopdetails__content .countadd .cart-plus-minus input.cart-plus-minus-box,
+.shopdetails__innerthumb,
+.shoppage__item .content,
+.shoppage__item .thum .shoppagelink a,
+.testmonial .thum .quode,
+.testmonial__header,
+.skill__item .skillbar-container,
+.request__header--headercontactpage,
+.request__form--contactpage p,
+.request__form--contactpage form,
+.process__inner,
+.process__header,
+.blogsingle__content .tagbutton-icon .tagicon ul li a,
+.blogsingle__content .quode .text h6,
+.blogsingle__content .quode .icon,
+.feedback2__inner .icon,
+.teamprofile__personalcontent .data > ul li .allicon ul li a,
+.team__inner .text,
+.team__inner .thumb .allicon ul li a,
+.team__inner .thumb .allicon .fixedicon i,
+.projectfilter__btn a,
+.projectfilter__btn,
+.projectfilter__item .inneritem .upitem a,
+.project__btn,
+.project__item .content .content-inner,
+.servicesingle__sidebar .brouchore .pdf-icon,
+.service2__item .text,
+.service2__item .thumb .icon,
+.service2__header p,
+.service2__header,
+.service__inner .thumb,
+.counter__inner .thumb,
+.counter__inner,
+.natureplant__innerimg .counteritem .thumb,
+.natureplant__gardingmake .item .thumb,
+.feature__inner,
+.footer__bottom,
+.footer__photo .allphoto .item .inneritem .upitem a,
+.footer__about .text .allsocialicon ul li a,
+.banner__content--contentpage2,
+.header__nav .mainactive > ul li > ul li::after,
+.header__cart .cart-details .item .right .text span,
+.header__cart .cart-details .close i,
+.header__cart .carticon:after,
+.header__topcontent .right ul li a,
+.pagi .pagi-inner ul li a,
+.faqcontent__header,
+.mission__inner .text,
+.pageheader__content,
+.newslatter .text h3,
+.partner__inner,
+.partner__item,
+.plybtn a,
+.scrollToTop,
+.section__header--header2 {
   text-align: center;
 }
 
-.cartpage__body ul li .product, .cartpage__header ul li:nth-child(1), .shoppage__item--itemshoppage .content, .portfoliosingle__right ul li {
+.cartpage__body ul li .product,
+.cartpage__header ul li:nth-child(1),
+.shoppage__item--itemshoppage .content,
+.portfoliosingle__right ul li {
   text-align: left;
 }
 
-.contactus__inner .text ul li, .cartpage__paymentitem .header ul li, .cartpage__body ul li, .cartpage__header ul li, .cartdesk__content ul li, .shopdetails__content ul li, .testmonial__content .profile .star ul li, .blogsingle__leavecoments--addreview .formarea form .reviewbtn .allreview ul li, .blogsingle__author .author-content .text ul li, .blogsingle__content .tagbutton-icon .tagicon ul li, .blogsingle__content .tagbutton-icon .tagbutton ul li, .blogsingle__content .heading ul li, .blogsingle__catagory .content ul li, .blogsingle__popularpost .postitem > ul > li, .blog__inner .content .text ul li, .feedback2__inner .text .profile .name ul li, .feedback__inner .top .profile .star ul li, .teamprofile__personalcontent .data > ul li .allicon ul li, .teamprofile__personalcontent .data > ul li, .team__inner .thumb .allicon ul li, .portfoliosingle__right ul li, .projectfilter__header ul li, .servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li, .servicesingle__sidebar .allheading ul li, .natureplant__content ul li, .footer__news ul li, .footer__link ul li, .footer__about .text .allsocialicon ul li, .header__nav .mainactive > ul li, .header__topcontent .right ul li, .header__topcontent .left ul li, .pagi .pagi-inner ul li, .faqcontent__content ul li {
+.contactus__inner .text ul li,
+.cartpage__paymentitem .header ul li,
+.cartpage__body ul li,
+.cartpage__header ul li,
+.cartdesk__content ul li,
+.shopdetails__content ul li,
+.testmonial__content .profile .star ul li,
+.blogsingle__leavecoments--addreview .formarea form .reviewbtn .allreview ul li,
+.blogsingle__author .author-content .text ul li,
+.blogsingle__content .tagbutton-icon .tagicon ul li,
+.blogsingle__content .tagbutton-icon .tagbutton ul li,
+.blogsingle__content .heading ul li,
+.blogsingle__catagory .content ul li,
+.blogsingle__popularpost .postitem > ul > li,
+.blog__inner .content .text ul li,
+.feedback2__inner .text .profile .name ul li,
+.feedback__inner .top .profile .star ul li,
+.teamprofile__personalcontent .data > ul li .allicon ul li,
+.teamprofile__personalcontent .data > ul li,
+.team__inner .thumb .allicon ul li,
+.portfoliosingle__right ul li,
+.projectfilter__header ul li,
+.servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li,
+.servicesingle__sidebar .allheading ul li,
+.natureplant__content ul li,
+.footer__news ul li,
+.footer__link ul li,
+.footer__about .text .allsocialicon ul li,
+.header__nav .mainactive > ul li,
+.header__topcontent .right ul li,
+.header__topcontent .left ul li,
+.pagi .pagi-inner ul li,
+.faqcontent__content ul li {
   list-style: none;
 }
 
@@ -549,7 +1777,27 @@ textarea {
   margin-block: 0;
 }
 
-.cartpage__paymentitem .content form .item:last-child, .shoppage__item .content a, .testmonial__content .profile .name h6, .accordion-item .accordion-button, .blogsingle__comments .content ul li .commentsarea p, .blogsingle__comments .content ul li .commentsarea .name-replaybtn .name h6, .blogsingle__catagory .content ul li:last-child, .feedback__inner .top .profile .name h6, .teamprofile__Guidelines p, .teamprofile__year p:last-child, .teamprofile__experience p:last-child, .teamprofile__personalcontent .data > ul li p, .portfoliosingle__right ul li p, .servicesingle__middle .text p:last-child, .servicesingle__top .text p:last-child, .servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li .textinner h6, .servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li:last-child, .counter__content .maincounter span, .natureplant__gardingmake .item .text span, .footer__news ul li .text h6, h1,
+.cartpage__paymentitem .content form .item:last-child,
+.shoppage__item .content a,
+.testmonial__content .profile .name h6,
+.accordion-item .accordion-button,
+.blogsingle__comments .content ul li .commentsarea p,
+.blogsingle__comments .content ul li .commentsarea .name-replaybtn .name h6,
+.blogsingle__catagory .content ul li:last-child,
+.feedback__inner .top .profile .name h6,
+.teamprofile__Guidelines p,
+.teamprofile__year p:last-child,
+.teamprofile__experience p:last-child,
+.teamprofile__personalcontent .data > ul li p,
+.portfoliosingle__right ul li p,
+.servicesingle__middle .text p:last-child,
+.servicesingle__top .text p:last-child,
+.servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li .textinner h6,
+.servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li:last-child,
+.counter__content .maincounter span,
+.natureplant__gardingmake .item .text span,
+.footer__news ul li .text h6,
+h1,
 h2,
 h3,
 h4,
@@ -570,11 +1818,24 @@ a h6 {
   margin-bottom: 0px;
 }
 
-.shopdetails__content ul li:last-child, .skill__item:last-child, .blogsingle__author .author-content .text h6, .blogsingle__popularpost .postitem > ul > li:last-child, .servicesingle__sidebar .allheading ul li:last-child {
+.shopdetails__content ul li:last-child,
+.skill__item:last-child,
+.blogsingle__author .author-content .text h6,
+.blogsingle__popularpost .postitem > ul > li:last-child,
+.servicesingle__sidebar .allheading ul li:last-child {
   margin-bottom: 0px !important;
 }
 
-.cartpage__paymentitem .content form .item, .shopdetails__content ul li, .shoppage__item .content .allstar, .skill__item .skill-title, .blogsingle__catagory .content ul li, .team__inner .thumb .allicon .fixedicon, .portfoliosingle__right ul li, .portfoliosingle__right h4, .service2__item .text h6 a, .feature__inner .text h6 {
+.cartpage__paymentitem .content form .item,
+.shopdetails__content ul li,
+.shoppage__item .content .allstar,
+.skill__item .skill-title,
+.blogsingle__catagory .content ul li,
+.team__inner .thumb .allicon .fixedicon,
+.portfoliosingle__right ul li,
+.portfoliosingle__right h4,
+.service2__item .text h6 a,
+.feature__inner .text h6 {
   margin-bottom: 10px;
 }
 
@@ -582,35 +1843,79 @@ a h6 {
   margin-bottom: 25px;
 }
 
-.process__inner p, .process__inner h6, .process__header p, .blogsingle__comments .content ul li .commentsarea p, .feedback__header p, .service__inner .text p, .faqcontent__header p {
+.process__inner p,
+.process__inner h6,
+.process__header p,
+.blogsingle__comments .content ul li .commentsarea p,
+.feedback__header p,
+.service__inner .text p,
+.faqcontent__header p {
   margin-top: 10px;
 }
 
-.shopdetails__content .rating a, .footer__link ul li:hover i, .footer__link ul li a, .section__header span img {
+.shopdetails__content .rating a,
+.footer__link ul li:hover i,
+.footer__link ul li a,
+.section__header span img {
   margin-left: 5px;
 }
 
-.shopdetails__content ul li i, .shopdetails__content .rating p, .footer__link ul li:hover i {
+.shopdetails__content ul li i,
+.shopdetails__content .rating p,
+.footer__link ul li:hover i {
   margin-right: 5px;
 }
 
-.cartdesk__content ul li i, .blogsingle__content .heading ul li i, .blog__inner .content .text ul li i, .servicesingle__sidebar .allheading ul li a i, .natureplant__content ul li i, .footer__link ul li i, .header__topcontent .left ul li .icon i {
+.cartdesk__content ul li i,
+.blogsingle__content .heading ul li i,
+.blog__inner .content .text ul li i,
+.servicesingle__sidebar .allheading ul li a i,
+.natureplant__content ul li i,
+.footer__link ul li i,
+.header__topcontent .left ul li .icon i {
   margin-right: 10px;
 }
 
-.contactus__inner .thumb, .teamprofile__Guidelines h5, .teamprofile__year h5, .teamprofile__experience h5, .servicesingle__middle .text p, .servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li, .servicesingle__sidebar .allheading ul li, .footer__about .text .allsocialicon h6, .header__cart .cart-details .item, .mission__inner .text h6 {
+.contactus__inner .thumb,
+.teamprofile__Guidelines h5,
+.teamprofile__year h5,
+.teamprofile__experience h5,
+.servicesingle__middle .text p,
+.servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li,
+.servicesingle__sidebar .allheading ul li,
+.footer__about .text .allsocialicon h6,
+.header__cart .cart-details .item,
+.mission__inner .text h6 {
   margin-bottom: 15px;
 }
 
-.servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li .textinner span, .servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li .textinner {
+.servicesingle__sidebar
+  .brouchore.brouchoreneedhelp
+  .text
+  ul
+  li
+  .textinner
+  span,
+.servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li .textinner {
   margin-top: 0;
 }
 
-.cartpage__paymentitem .header, .shopdetails__content .countadd a, .blogsingle__leavecoments--addreview .formarea form .reviewbtn button, .feedback2__inner .text .profile .name p, .header--headerpage3 {
+.cartpage__paymentitem .header,
+.shopdetails__content .countadd a,
+.blogsingle__leavecoments--addreview .formarea form .reviewbtn button,
+.feedback2__inner .text .profile .name p,
+.header--headerpage3 {
   margin-top: 0 !important;
 }
 
-.cartdesk__text .destext, .testmonial__header p, .request__header p, .blogsingle__popularpost--relatedPost .postitem ul li .content span, .blogsingle__popularpost .postitem > ul > li .content span, .teamprofile__personalcontent span, .service__headerpage3 p, .pageheader__content ul {
+.cartdesk__text .destext,
+.testmonial__header p,
+.request__header p,
+.blogsingle__popularpost--relatedPost .postitem ul li .content span,
+.blogsingle__popularpost .postitem > ul > li .content span,
+.teamprofile__personalcontent span,
+.service__headerpage3 p,
+.pageheader__content ul {
   margin-top: 5px;
 }
 
@@ -618,11 +1923,17 @@ a h6 {
   margin-top: 15px;
 }
 
-.accordion-item, .blogsingle__content .heading h4, .blogsingle__popularpost .postitem > ul > li, .sideallheading {
+.accordion-item,
+.blogsingle__content .heading h4,
+.blogsingle__popularpost .postitem > ul > li,
+.sideallheading {
   margin-bottom: 20px;
 }
 
-.request__form--contactpage p, .process__inner img, .portfoliosingle__left .item p, .fourzero__content p {
+.request__form--contactpage p,
+.process__inner img,
+.portfoliosingle__left .item p,
+.fourzero__content p {
   margin-top: 20px;
 }
 
@@ -634,7 +1945,27 @@ a h6 {
   margin-right: 20px;
 }
 
-.cartpage__paymentitem .content form .item:last-child, .shoppage__item .content a, .testmonial__content .profile .name h6, .accordion-item .accordion-button, .blogsingle__comments .content ul li .commentsarea p, .blogsingle__comments .content ul li .commentsarea .name-replaybtn .name h6, .blogsingle__catagory .content ul li:last-child, .feedback__inner .top .profile .name h6, .teamprofile__Guidelines p, .teamprofile__year p:last-child, .teamprofile__experience p:last-child, .teamprofile__personalcontent .data > ul li p, .portfoliosingle__right ul li p, .servicesingle__middle .text p:last-child, .servicesingle__top .text p:last-child, .servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li .textinner h6, .servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li:last-child, .counter__content .maincounter span, .natureplant__gardingmake .item .text span, .footer__news ul li .text h6, h1,
+.cartpage__paymentitem .content form .item:last-child,
+.shoppage__item .content a,
+.testmonial__content .profile .name h6,
+.accordion-item .accordion-button,
+.blogsingle__comments .content ul li .commentsarea p,
+.blogsingle__comments .content ul li .commentsarea .name-replaybtn .name h6,
+.blogsingle__catagory .content ul li:last-child,
+.feedback__inner .top .profile .name h6,
+.teamprofile__Guidelines p,
+.teamprofile__year p:last-child,
+.teamprofile__experience p:last-child,
+.teamprofile__personalcontent .data > ul li p,
+.portfoliosingle__right ul li p,
+.servicesingle__middle .text p:last-child,
+.servicesingle__top .text p:last-child,
+.servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li .textinner h6,
+.servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li:last-child,
+.counter__content .maincounter span,
+.natureplant__gardingmake .item .text span,
+.footer__news ul li .text h6,
+h1,
 h2,
 h3,
 h4,
@@ -655,15 +1986,27 @@ a h6 {
   margin-bottom: 0px;
 }
 
-.shopdetails__content ul li:last-child, .skill__item:last-child, .blogsingle__author .author-content .text h6, .blogsingle__popularpost .postitem > ul > li:last-child, .servicesingle__sidebar .allheading ul li:last-child {
+.shopdetails__content ul li:last-child,
+.skill__item:last-child,
+.blogsingle__author .author-content .text h6,
+.blogsingle__popularpost .postitem > ul > li:last-child,
+.servicesingle__sidebar .allheading ul li:last-child {
   margin-bottom: 0px !important;
 }
 
-.cartdesk__text .nametext .profile h6, .skill__header h3, .section__header h3, .section__header span {
+.cartdesk__text .nametext .profile h6,
+.skill__header h3,
+.section__header h3,
+.section__header span {
   margin-bottom: 5px;
 }
 
-.cartdesk__item, .blogsingle__leavecoments h5, .blogsingle__comments h5, .blogsingle__author h5, .natureplant__content p, .newslatter .text h3 {
+.cartdesk__item,
+.blogsingle__leavecoments h5,
+.blogsingle__comments h5,
+.blogsingle__author h5,
+.natureplant__content p,
+.newslatter .text h3 {
   margin-bottom: 30px;
 }
 
@@ -681,12 +2024,14 @@ a h6 {
   margin-bottom: 5px;
 }
 
-.blogsingle__author .author-content .text p, .faqcontent__content p {
+.blogsingle__author .author-content .text p,
+.faqcontent__content p {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.cartpage__paymentitem .content form .zipcode, .blog__inner .content .text ul {
+.cartpage__paymentitem .content form .zipcode,
+.blog__inner .content .text ul {
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -697,19 +2042,26 @@ a h6 {
 }
 
 /* @@@@@@@@@@@@@  Extend Property padding 10 - 30 CSS Writing Now  @@@@@@@@@@@@@@ */
-.accordion-item .accordion-body, .accordion-item .accordion-button, .servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li {
+.accordion-item .accordion-body,
+.accordion-item .accordion-button,
+.servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li {
   padding: 0;
 }
 
-.accordion-item--itme2Serpage, .blogsingle__leavecoments--addreview, .blogsingle__popularpost--relatedPost .postitem ul li {
+.accordion-item--itme2Serpage,
+.blogsingle__leavecoments--addreview,
+.blogsingle__popularpost--relatedPost .postitem ul li {
   padding: 0 !important;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
   padding: 15px;
 }
 
-.blogsingle__catagory .content ul li:last-child, .servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li:last-child {
+.blogsingle__catagory .content ul li:last-child,
+.servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li:last-child {
   padding-bottom: 0;
 }
 
@@ -717,7 +2069,8 @@ input, textarea, select {
   padding-bottom: 0 !important;
 }
 
-.blogsingle__catagory .content ul li, .portfoliosingle__right ul li {
+.blogsingle__catagory .content ul li,
+.portfoliosingle__right ul li {
   padding-bottom: 10px;
 }
 
@@ -733,7 +2086,9 @@ input, textarea, select {
   padding-bottom: 15px;
 }
 
-.blogsingle__popularpost .postitem > ul > li, .servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li, .sideallheading {
+.blogsingle__popularpost .postitem > ul > li,
+.servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li,
+.sideallheading {
   padding-bottom: 20px;
 }
 
@@ -741,11 +2096,13 @@ input, textarea, select {
   padding-bottom: 30px;
 }
 
-.cartpage__paymentitem .content form .item input, .header__nav .mainactive > ul li > ul li::after {
+.cartpage__paymentitem .content form .item input,
+.header__nav .mainactive > ul li > ul li::after {
   width: 15px;
 }
 
-.cartpage__paymentitem .content form .item input, .header__nav .mainactive > ul li > ul li::after {
+.cartpage__paymentitem .content form .item input,
+.header__nav .mainactive > ul li > ul li::after {
   height: 15px;
 }
 
@@ -753,20 +2110,27 @@ input, textarea, select {
   height: 20px;
 }
 
-.header__cart .cart-details .close i, .header__cart, .header__topcontent .right ul li a {
+.header__cart .cart-details .close i,
+.header__cart,
+.header__topcontent .right ul li a {
   width: 25px;
 }
 
-.header__cart .cart-details .close i, .header__topcontent .right ul li a {
+.header__cart .cart-details .close i,
+.header__topcontent .right ul li a {
   height: 25px;
 }
 
-.shoppage__item .thum .shoppagelink a, .blogsingle__content .tagbutton-icon .tagicon ul li a, .pluse_1::after,
+.shoppage__item .thum .shoppagelink a,
+.blogsingle__content .tagbutton-icon .tagicon ul li a,
+.pluse_1::after,
 .pluse_2::after {
   width: 30px;
 }
 
-.shoppage__item .thum .shoppagelink a, .blogsingle__content .tagbutton-icon .tagicon ul li a, .pluse_1::after,
+.shoppage__item .thum .shoppagelink a,
+.blogsingle__content .tagbutton-icon .tagicon ul li a,
+.pluse_1::after,
 .pluse_2::after {
   height: 30px;
 }
@@ -779,11 +2143,22 @@ input, textarea, select {
   width: 35px !important;
 }
 
-.footer__photo .allphoto .item .inneritem .upitem a, .footer__about .text .allsocialicon ul li a {
+.footer__photo .allphoto .item .inneritem .upitem a,
+.footer__about .text .allsocialicon ul li a {
   height: 35px;
 }
 
-.cartpage__body ul li .countadd .cart-plus-minus .qtybutton, .cartpage__body ul li .countadd .cart-plus-minus input, .shopdetails__content .countadd .cart-plus-minus .qtybutton, .shopdetails__content .countadd .cart-plus-minus input, .testmonial .thum .quode, .accordion-item .accordion-button .plus-icon, .teamprofile__personalcontent .data > ul li .allicon ul li a, .team__inner .thumb .allicon ul li a, .team__inner .thumb .allicon .fixedicon i, .team__inner .thumb .allicon, .scrollToTop {
+.cartpage__body ul li .countadd .cart-plus-minus .qtybutton,
+.cartpage__body ul li .countadd .cart-plus-minus input,
+.shopdetails__content .countadd .cart-plus-minus .qtybutton,
+.shopdetails__content .countadd .cart-plus-minus input,
+.testmonial .thum .quode,
+.accordion-item .accordion-button .plus-icon,
+.teamprofile__personalcontent .data > ul li .allicon ul li a,
+.team__inner .thumb .allicon ul li a,
+.team__inner .thumb .allicon .fixedicon i,
+.team__inner .thumb .allicon,
+.scrollToTop {
   width: 40px;
 }
 
@@ -791,19 +2166,33 @@ input, textarea, select {
   width: 40px !important;
 }
 
-.cartpage__body ul li .countadd .cart-plus-minus .qtybutton, .cartpage__body ul li .countadd .cart-plus-minus input, .shopdetails__content .countadd .cart-plus-minus .qtybutton, .shopdetails__content .countadd .cart-plus-minus input, .testmonial .thum .quode, .accordion-item .accordion-button .plus-icon, .teamprofile__personalcontent .data > ul li .allicon ul li a, .team__inner .thumb .allicon ul li a, .team__inner .thumb .allicon .fixedicon i, .team__inner .thumb .allicon, .projectfilter__item .inneritem .upitem a, .scrollToTop {
+.cartpage__body ul li .countadd .cart-plus-minus .qtybutton,
+.cartpage__body ul li .countadd .cart-plus-minus input,
+.shopdetails__content .countadd .cart-plus-minus .qtybutton,
+.shopdetails__content .countadd .cart-plus-minus input,
+.testmonial .thum .quode,
+.accordion-item .accordion-button .plus-icon,
+.teamprofile__personalcontent .data > ul li .allicon ul li a,
+.team__inner .thumb .allicon ul li a,
+.team__inner .thumb .allicon .fixedicon i,
+.team__inner .thumb .allicon,
+.projectfilter__item .inneritem .upitem a,
+.scrollToTop {
   height: 40px;
 }
 
-.natureplant__innerimg .counteritem .thumb, .pagi .pagi-inner ul li a {
+.natureplant__innerimg .counteritem .thumb,
+.pagi .pagi-inner ul li a {
   width: 50px;
 }
 
-.natureplant__innerimg .counteritem .thumb, .pagi .pagi-inner ul li a {
+.natureplant__innerimg .counteritem .thumb,
+.pagi .pagi-inner ul li a {
   height: 50px;
 }
 
-.cartpage__body ul li .product .thum, .feedback2__inner .text .profile .thumb {
+.cartpage__body ul li .product .thum,
+.feedback2__inner .text .profile .thumb {
   width: 60px;
 }
 
@@ -811,27 +2200,42 @@ input, textarea, select {
   height: 60px;
 }
 
-.contactus__inner .thumb, .feedback2__inner .icon, .natureplant__gardingmake .item .thumb, .header__cart .cart-details .item .right .text span, .plybtn a {
+.contactus__inner .thumb,
+.feedback2__inner .icon,
+.natureplant__gardingmake .item .thumb,
+.header__cart .cart-details .item .right .text span,
+.plybtn a {
   width: 70px;
 }
 
-.contactus__inner .thumb, .feedback2__inner .icon, .natureplant__gardingmake .item .thumb, .plybtn a {
+.contactus__inner .thumb,
+.feedback2__inner .icon,
+.natureplant__gardingmake .item .thumb,
+.plybtn a {
   height: 70px;
 }
 
-.service2__item .thumb .icon, .service__inner .thumb, .feature__inner .icon {
+.service2__item .thumb .icon,
+.service__inner .thumb,
+.feature__inner .icon {
   width: 75px;
 }
 
-.service2__item .thumb .icon, .service__inner .thumb, .feature__inner .icon {
+.service2__item .thumb .icon,
+.service__inner .thumb,
+.feature__inner .icon {
   height: 75px;
 }
 
-.cartdesk__img, .blogsingle__comments .content ul li .img {
+.cartdesk__img,
+.blogsingle__comments .content ul li .img {
   width: 80px;
 }
 
-.cartdesk__img, .testmonial .thum, .blogsingle__comments .content ul li .img, .feedback__inner .top .thumb {
+.cartdesk__img,
+.testmonial .thum,
+.blogsingle__comments .content ul li .img,
+.feedback__inner .top .thumb {
   height: 80px;
 }
 
@@ -839,11 +2243,13 @@ input, textarea, select {
   width: 85px;
 }
 
-.blogsingle__content .quode .icon, .footer__news ul li .thumb {
+.blogsingle__content .quode .icon,
+.footer__news ul li .thumb {
   width: 90px;
 }
 
-.blogsingle__content .quode .icon, .footer__news ul li .thumb {
+.blogsingle__content .quode .icon,
+.footer__news ul li .thumb {
   height: 90px;
 }
 
@@ -855,15 +2261,21 @@ input, textarea, select {
   height: 95px;
 }
 
-.servicesingle__sidebar .brouchore .pdf-icon img, .counter__inner .thumb {
+.servicesingle__sidebar .brouchore .pdf-icon img,
+.counter__inner .thumb {
   width: 100px;
 }
 
-.cartpage__body ul li .remove, .cartpage__body ul li .total, .cartpage__body ul li .price, .cartpage__body ul li .product, .counter__inner .thumb {
+.cartpage__body ul li .remove,
+.cartpage__body ul li .total,
+.cartpage__body ul li .price,
+.cartpage__body ul li .product,
+.counter__inner .thumb {
   height: 100px;
 }
 
-.header__cart .cart-details .item .right .text span, .header__cart .carticon:after {
+.header__cart .cart-details .item .right .text span,
+.header__cart .carticon:after {
   line-height: 20px;
 }
 
@@ -871,7 +2283,8 @@ input, textarea, select {
   line-height: 25px;
 }
 
-.shoppage__item .thum .shoppagelink a, .blogsingle__content .tagbutton-icon .tagicon ul li a {
+.shoppage__item .thum .shoppagelink a,
+.blogsingle__content .tagbutton-icon .tagicon ul li a {
   line-height: 30px;
 }
 
@@ -879,11 +2292,19 @@ input, textarea, select {
   line-height: 35px;
 }
 
-.cartpage__body ul li .countadd .cart-plus-minus .qtybutton, .cartpage__body ul li .countadd .cart-plus-minus input, .shopdetails__content .countadd .cart-plus-minus .qtybutton, .shopdetails__content .countadd .cart-plus-minus input, .teamprofile__personalcontent .data > ul li .allicon ul li a, .team__inner .thumb .allicon ul li a, .team__inner .thumb .allicon .fixedicon i, .scrollToTop {
+.cartpage__body ul li .countadd .cart-plus-minus .qtybutton,
+.cartpage__body ul li .countadd .cart-plus-minus input,
+.shopdetails__content .countadd .cart-plus-minus .qtybutton,
+.shopdetails__content .countadd .cart-plus-minus input,
+.teamprofile__personalcontent .data > ul li .allicon ul li a,
+.team__inner .thumb .allicon ul li a,
+.team__inner .thumb .allicon .fixedicon i,
+.scrollToTop {
   line-height: 40px;
 }
 
-.natureplant__innerimg .counteritem .thumb, .pagi .pagi-inner ul li a {
+.natureplant__innerimg .counteritem .thumb,
+.pagi .pagi-inner ul li a {
   line-height: 50px;
 }
 
@@ -891,15 +2312,20 @@ input, textarea, select {
   line-height: 60px;
 }
 
-.feedback2__inner .icon, .natureplant__gardingmake .item .thumb {
+.feedback2__inner .icon,
+.natureplant__gardingmake .item .thumb {
   line-height: 70px;
 }
 
-.service2__item .thumb .icon, .service__inner .thumb, .feature__inner .icon {
+.service2__item .thumb .icon,
+.service__inner .thumb,
+.feature__inner .icon {
   line-height: 75px;
 }
 
-.contactus__inner .thumb, .blogsingle__comments .content ul li .img, .plybtn a {
+.contactus__inner .thumb,
+.blogsingle__comments .content ul li .img,
+.plybtn a {
   line-height: 80px;
 }
 
@@ -907,7 +2333,11 @@ input, textarea, select {
   line-height: 90px;
 }
 
-.cartpage__body ul li .remove, .cartpage__body ul li .total, .cartpage__body ul li .price, .cartpage__body ul li .product, .counter__inner .thumb {
+.cartpage__body ul li .remove,
+.cartpage__body ul li .total,
+.cartpage__body ul li .price,
+.cartpage__body ul li .product,
+.counter__inner .thumb {
   line-height: 100px;
 }
 
@@ -915,7 +2345,43 @@ input, textarea, select {
   margin-block: 5px;
 }
 
-.cartpage__item, .shoppage__item, .testmonial__item, .skill__item .skillbar-container, .request__form form textarea, .request__form form .allinput input, .accordion-item .accordion-button .plus-icon, .blogsingle__comments .content ul li .commentsarea .name-replaybtn .replaybtn a, .blogsingle__content .tagbutton-icon .tagbutton ul li a, .blogsingle__content .quode, .blogsingle__alltag .alltaginner a, .blogsingle__alltag, .blogsingle__catagory, .blogsingle__popularpost, .blogsingle__search .search-area input, .blogsingle__search, .blog__inner, .feedback2__inner, .team__inner .thumb .allicon ul li a, .team__inner .thumb .allicon .fixedicon i, .portfoliosingle__thumb, .projectfilter__item, .projectfilter__header ul li, .project__item .thum, .servicesingle__sidebar .brouchore.brouchoreneedhelp .thumb img, .servicesingle__sidebar .brouchore.brouchoreneedhelp .thumb, .servicesingle__sidebar .brouchore .pdf-icon, .servicesingle__sidebar .brouchore, .servicesingle__sidebar .allheading, .service2__item, .natureplant__innerimg .counteritem, .nav-pills .nav-link, .mission__inner .thumb, .mission__inner, .newslatter__form form button, .newslatter__form form input, .fourzero__content form input {
+.cartpage__item,
+.shoppage__item,
+.testmonial__item,
+.skill__item .skillbar-container,
+.request__form form textarea,
+.request__form form .allinput input,
+.accordion-item .accordion-button .plus-icon,
+.blogsingle__comments .content ul li .commentsarea .name-replaybtn .replaybtn a,
+.blogsingle__content .tagbutton-icon .tagbutton ul li a,
+.blogsingle__content .quode,
+.blogsingle__alltag .alltaginner a,
+.blogsingle__alltag,
+.blogsingle__catagory,
+.blogsingle__popularpost,
+.blogsingle__search .search-area input,
+.blogsingle__search,
+.blog__inner,
+.feedback2__inner,
+.team__inner .thumb .allicon ul li a,
+.team__inner .thumb .allicon .fixedicon i,
+.portfoliosingle__thumb,
+.projectfilter__item,
+.projectfilter__header ul li,
+.project__item .thum,
+.servicesingle__sidebar .brouchore.brouchoreneedhelp .thumb img,
+.servicesingle__sidebar .brouchore.brouchoreneedhelp .thumb,
+.servicesingle__sidebar .brouchore .pdf-icon,
+.servicesingle__sidebar .brouchore,
+.servicesingle__sidebar .allheading,
+.service2__item,
+.natureplant__innerimg .counteritem,
+.nav-pills .nav-link,
+.mission__inner .thumb,
+.mission__inner,
+.newslatter__form form button,
+.newslatter__form form input,
+.fourzero__content form input {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -975,7 +2441,7 @@ a h6 {
   clear: both;
   line-height: 1.3;
   font-family: "Poppins", sans-serif;
-  color: #1E1E1E;
+  color: #1e1e1e;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -1036,12 +2502,12 @@ p {
   font-weight: 400;
   font-size: 1rem;
   line-height: 24px;
-  color: #70717B;
+  color: #70717b;
   font-family: "Poppins", sans-serif;
 }
 
 a {
-  color: #0066B3;
+  color: #0066b3;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -1077,7 +2543,7 @@ img {
 }
 
 select {
-  border: 1px solid #D9D9D9;
+  border: 1px solid #d9d9d9;
 }
 
 ul li a.facebook {
@@ -1097,7 +2563,9 @@ ul li a.twitter {
   color: #fff !important;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
   outline: none;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.1);
@@ -1207,7 +2675,7 @@ input, textarea, select {
   bottom: -30%;
   right: 5%;
   z-index: 9;
-  background: linear-gradient(99deg, #73B611 25.27%, #73B611 96.39%);
+  background: linear-gradient(99deg, #73b611 25.27%, #73b611 96.39%);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -1244,10 +2712,11 @@ input, textarea, select {
   transform: translate(-50%, -50%);
   background: rgba(115, 182, 17, 0.1);
 }
-.pluse_1::after, .pluse_1::before,
+.pluse_1::after,
+.pluse_1::before,
 .pluse_2::after,
 .pluse_2::before {
-  background: #73B611;
+  background: #73b611;
   border-radius: 50%;
   margin-left: -20px;
   margin-top: -20px;
@@ -1659,7 +3128,7 @@ input, textarea, select {
 
 .mission__inner {
   padding: 0.625rem;
-  border: 1px solid #F8F5F0;
+  border: 1px solid #f8f5f0;
 }
 .mission__inner .text {
   padding: calc(1.3125rem + 0.75vw) 0.625rem;
@@ -1680,7 +3149,7 @@ input, textarea, select {
 .nav-pills .nav-link {
   font-size: 0.9375rem;
   padding: 10px 8px;
-  border: 1px solid #F8F5F0;
+  border: 1px solid #f8f5f0;
 }
 @media (min-width: 992px) {
   .nav-pills .nav-link {
@@ -1699,7 +3168,7 @@ input, textarea, select {
   }
 }
 .faqcontent__content {
-  border: 1px solid #F8F5F0;
+  border: 1px solid #f8f5f0;
   padding: calc(1.40625rem + 1.875vw) calc(1.3125rem + 0.75vw);
 }
 @media (min-width: 1200px) {
@@ -1709,7 +3178,8 @@ input, textarea, select {
 }
 @media (min-width: 1366px) {
   .faqcontent__content {
-    padding: calc(1.3625rem + 1.35vw) calc(1.3125rem + 0.75vw) calc(1.3625rem + 1.35vw) calc(1.40625rem + 1.875vw);
+    padding: calc(1.3625rem + 1.35vw) calc(1.3125rem + 0.75vw)
+      calc(1.3625rem + 1.35vw) calc(1.40625rem + 1.875vw);
   }
 }
 @media (min-width: 1366px) and (min-width: 1200px) {
@@ -1754,7 +3224,7 @@ input, textarea, select {
 }
 
 .sideallheading {
-  border-bottom: 1px solid #F2F6F9;
+  border-bottom: 1px solid #f2f6f9;
 }
 
 .pagi {
@@ -1942,7 +3412,7 @@ input, textarea, select {
   max-width: 100% !important;
 }
 .header__top {
-  border-bottom: 1px solid #EFEFEF;
+  border-bottom: 1px solid #efefef;
 }
 @media (max-width: 1199px) {
   .header__top {
@@ -1971,8 +3441,8 @@ input, textarea, select {
 }
 @media (min-width: 992px) {
   .header__topcontent .left ul li:nth-child(2) {
-    border-right: 1px solid #EFEFEF;
-    border-left: 1px solid #EFEFEF;
+    border-right: 1px solid #efefef;
+    border-left: 1px solid #efefef;
     padding: 0.9375rem calc(1.28125rem + 0.375vw);
     margin: 0 calc(1.28125rem + 0.375vw);
   }
@@ -2003,16 +3473,16 @@ input, textarea, select {
 @media (min-width: 992px) {
   .header__topcontent .right ul li {
     padding: 0.875rem;
-    border-right: 1px solid #EFEFEF;
+    border-right: 1px solid #efefef;
   }
 }
 @media (min-width: 992px) {
   .header__topcontent .right ul li:first-child {
-    border-left: 1px solid #EFEFEF;
+    border-left: 1px solid #efefef;
   }
 }
 .header__topcontent .right ul li a {
-  background: #1E1E1E;
+  background: #1e1e1e;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
@@ -2090,7 +3560,7 @@ input, textarea, select {
 }
 @media (min-width: 1200px) {
   .header__bottom {
-    background: #F8F5F0;
+    background: #f8f5f0;
   }
 }
 .header__bottom .right {
@@ -2134,7 +3604,7 @@ input, textarea, select {
   -moz-border-radius: 10px;
   border-radius: 10px;
   content: "3";
-  background: #1E1E1E;
+  background: #1e1e1e;
   font-size: 14px;
 }
 .header__cart .cart-details {
@@ -2192,9 +3662,9 @@ input, textarea, select {
 }
 @media (max-width: 1199px) {
   .header__nav .mobilelogo {
-    background: #73B611;
+    background: #73b611;
     padding: 0.9375rem 1.25rem;
-    border-bottom: 2px solid #73B611;
+    border-bottom: 2px solid #73b611;
   }
 }
 @media (max-width: 1199px) {
@@ -2270,7 +3740,7 @@ input, textarea, select {
     overflow: visible;
   }
   .header__nav .mainactive > ul li:hover a {
-    color: #73B611;
+    color: #73b611;
   }
 }
 .header__nav .mainactive > ul li > ul {
@@ -2281,7 +3751,7 @@ input, textarea, select {
 }
 @media (min-width: 1200px) {
   .header__nav .mainactive > ul li > ul {
-    background: #73B611;
+    background: #73b611;
   }
 }
 @media (min-width: 1200px) {
@@ -2320,7 +3790,7 @@ input, textarea, select {
   }
 }
 .header__nav .mainactive > ul li > ul li a {
-  color: #1E1E1E;
+  color: #1e1e1e;
   padding: 0.75rem calc(1.375rem + 1.5vw);
 }
 @media (min-width: 1200px) {
@@ -2339,7 +3809,7 @@ input, textarea, select {
 }
 @media (min-width: 1200px) {
   .header__nav .mainactive > ul li > ul li a.active {
-    background: #1E1E1E;
+    background: #1e1e1e;
   }
 }
 .header__nav .mainactive > ul li > ul li.menu-item-has-children > a::after {
@@ -2358,7 +3828,7 @@ input, textarea, select {
 }
 @media (min-width: 1200px) {
   .header__nav .mainactive > ul li > ul li:hover > a {
-    background: #1E1E1E;
+    background: #1e1e1e;
   }
 }
 .header__nav .mainactive > ul li > ul li:hover::after {
@@ -2433,7 +3903,7 @@ input, textarea, select {
     right: 9px;
     width: 10px;
     height: 2px;
-    background: #1E1E1E;
+    background: #1e1e1e;
   }
   .header .menu-item-has-children > a::before {
     position: absolute;
@@ -2442,7 +3912,7 @@ input, textarea, select {
     right: 13px;
     width: 2px;
     height: 10px;
-    background: #1E1E1E;
+    background: #1e1e1e;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -2455,7 +3925,7 @@ input, textarea, select {
   }
 }
 .header .menu-item-has-children:hover > a::after {
-  background: #73B611;
+  background: #73b611;
 }
 @media (max-width: 1199px) {
   .header .menu-item-has-children.open > a:before {
@@ -2722,7 +4192,8 @@ input, textarea, select {
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-.custom-btn:before, .custom-btn:after {
+.custom-btn:before,
+.custom-btn:after {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -2733,18 +4204,18 @@ input, textarea, select {
 .custom-btn:before {
   right: calc(-60px - 5px);
   border-right: calc(60px + 5px) solid transparent;
-  border-bottom: calc(60px + 5px) solid #13172B;
+  border-bottom: calc(60px + 5px) solid #13172b;
   transform: translateX(-100%);
 }
 .custom-btn:after {
   left: calc(-60px - 5px);
   border-left: calc(60px + 5px) solid transparent;
-  border-top: calc(60px + 5px) solid #13172B;
+  border-top: calc(60px + 5px) solid #13172b;
   transform: translateX(100%);
 }
 .custom-btn:hover {
   color: #fff;
-  border-color: #13172B;
+  border-color: #13172b;
 }
 .custom-btn:hover:before {
   transform: translateX(-49%);
@@ -2784,7 +4255,7 @@ input, textarea, select {
   gap: 10px;
 }
 .footer__about .text .allsocialicon ul li a {
-  background: #1E1E1E;
+  background: #1e1e1e;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
@@ -2847,7 +4318,7 @@ input, textarea, select {
 }
 .footer__news ul li:first-child::after {
   height: 1px;
-  background: #E4E4E4;
+  background: #e4e4e4;
   bottom: -3px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2937,7 +4408,7 @@ input, textarea, select {
   }
 }
 .feature__inner .icon::after {
-  border: 1.7px solid #73B611;
+  border: 1.7px solid #73b611;
   border-style: dashed;
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
@@ -2947,7 +4418,7 @@ input, textarea, select {
   font-weight: 300;
 }
 .feature__inner:hover .icon::after {
-  border: 1.9px solid #73B611;
+  border: 1.9px solid #73b611;
   border-style: dashed;
 }
 .feature__inner:hover .icon img {
@@ -2955,7 +4426,7 @@ input, textarea, select {
 }
 .feature__inner--innerpage3 {
   padding: calc(1.375rem + 1.5vw) calc(1.28125rem + 0.375vw);
-  border: 1px solid #F8F5F0;
+  border: 1px solid #f8f5f0;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
@@ -3041,7 +4512,7 @@ input, textarea, select {
   gap: 20px;
 }
 .natureplant__gardingmake .item .thumb::after {
-  border: 1.7px solid #73B611;
+  border: 1.7px solid #73b611;
   border-style: dashed;
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
@@ -3104,7 +4575,7 @@ input, textarea, select {
   }
 }
 .natureplant__innerimg .counteritem .thumb::after {
-  border: 1.7px solid #73B611;
+  border: 1.7px solid #73b611;
   border-style: dashed;
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
@@ -3157,7 +4628,7 @@ input, textarea, select {
   }
 }
 .natureplant--aboutpage {
-  background: #F8F5F0;
+  background: #f8f5f0;
   padding: calc(1.875rem + 7.5vw) 0;
 }
 @media (min-width: 1200px) {
@@ -3214,7 +4685,7 @@ input, textarea, select {
   margin-bottom: 1.25rem;
 }
 .counter__inner .thumb::after {
-  border: 1.7px solid #73B611;
+  border: 1.7px solid #73b611;
   border-style: dashed;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -3259,7 +4730,7 @@ input, textarea, select {
   margin-top: 1.25rem;
 }
 .service__inner .thumb::after {
-  border: 1.7px solid #73B611;
+  border: 1.7px solid #73b611;
   border-style: dashed;
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
@@ -3363,7 +4834,7 @@ input, textarea, select {
   }
 }
 .service2__item--itemservicepage {
-  border: 1px solid #F8F5F0;
+  border: 1px solid #f8f5f0;
 }
 .service2__wrapper {
   margin-top: calc(1.375rem + 1.5vw);
@@ -3393,7 +4864,7 @@ input, textarea, select {
   }
 }
 .servicesingle__sidebar .allheading {
-  border: 1px solid #F8F5F0;
+  border: 1px solid #f8f5f0;
   padding: 20px;
 }
 .servicesingle__sidebar .allheading ul li {
@@ -3406,7 +4877,7 @@ input, textarea, select {
   }
 }
 .servicesingle__sidebar .brouchore {
-  border: 1px solid #F8F5F0;
+  border: 1px solid #f8f5f0;
   padding: 1.25rem;
   margin-top: calc(1.3125rem + 0.75vw);
 }
@@ -3445,12 +4916,18 @@ input, textarea, select {
 .servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li {
   display: flex;
   gap: 20px;
-  border-bottom: 1px solid #F8F5F0;
+  border-bottom: 1px solid #f8f5f0;
 }
 .servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li .icon i {
   font-size: 1.125rem;
 }
-.servicesingle__sidebar .brouchore.brouchoreneedhelp .text ul li .textinner span {
+.servicesingle__sidebar
+  .brouchore.brouchoreneedhelp
+  .text
+  ul
+  li
+  .textinner
+  span {
   font-size: 1rem;
   color: #555;
 }
@@ -3533,7 +5010,7 @@ input, textarea, select {
   padding-inline: 2.5rem;
 }
 .project--projectdetails {
-  background: #F8F5F0;
+  background: #f8f5f0;
   padding: calc(1.875rem + 7.5vw) 0 calc(2.375rem + 13.5vw) 0;
 }
 @media (min-width: 1200px) {
@@ -3574,7 +5051,7 @@ input, textarea, select {
   }
 }
 .projectfilter__header ul li.active {
-  border: 1px solid #73B611;
+  border: 1px solid #73b611;
 }
 .projectfilter__item .inneritem {
   transform: translate(-50%, -50%);
@@ -3717,11 +5194,11 @@ input, textarea, select {
   }
 }
 .portfoliosingle__right {
-  border: 1px solid #F2F6F9;
+  border: 1px solid #f2f6f9;
 }
 .portfoliosingle__right h4 {
   padding: 1.25rem calc(1.375rem + 1.5vw) 1.25rem calc(1.375rem + 1.5vw);
-  border-bottom: 1px solid #F2F6F9;
+  border-bottom: 1px solid #f2f6f9;
 }
 @media (min-width: 1200px) {
   .portfoliosingle__right h4 {
@@ -3734,7 +5211,7 @@ input, textarea, select {
   }
 }
 .portfoliosingle__right ul li {
-  border-bottom: 1px solid #F2F6F9;
+  border-bottom: 1px solid #f2f6f9;
   padding-inline: 1.25rem;
 }
 @media (min-width: 450px) {
@@ -3782,7 +5259,7 @@ input, textarea, select {
   top: 30px;
 }
 .team__inner .thumb .allicon .fixedicon i {
-  background: #1E1E1E;
+  background: #1e1e1e;
 }
 .team__inner .thumb .allicon ul {
   visibility: hidden;
@@ -3815,7 +5292,11 @@ input, textarea, select {
 }
 @media (min-width: 576px) {
   .team__inner .thumb::after {
-    background-image: linear-gradient(to top, rgb(115, 182, 17), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(
+      to top,
+      rgb(115, 182, 17),
+      rgba(0, 0, 0, 0)
+    );
     transform: scaleY(0);
     transform-origin: bottom;
   }
@@ -3892,12 +5373,13 @@ input, textarea, select {
   }
 }
 .teamprofile__allcontent {
-  border: 1px solid #F8F5F0;
+  border: 1px solid #f8f5f0;
   padding: 1.25rem;
 }
 @media (min-width: 1200px) {
   .teamprofile__allcontent {
-    padding: calc(1.3125rem + 0.75vw) calc(1.3125rem + 0.75vw) calc(1.375rem + 1.5vw) calc(1.3125rem + 0.75vw);
+    padding: calc(1.3125rem + 0.75vw) calc(1.3125rem + 0.75vw)
+      calc(1.375rem + 1.5vw) calc(1.3125rem + 0.75vw);
   }
 }
 @media (min-width: 1200px) and (min-width: 1200px) {
@@ -4059,7 +5541,7 @@ input, textarea, select {
 }
 
 .feedback2__inner {
-  border: 1px solid #F8F5F0;
+  border: 1px solid #f8f5f0;
   padding: 1.25rem;
   margin: calc(1.625rem + 4.5vw) 0 calc(1.375rem + 1.5vw) 0;
 }
@@ -4083,7 +5565,7 @@ input, textarea, select {
   margin-top: -60px;
 }
 .feedback2__inner .icon::after {
-  border: 1px solid #73B611;
+  border: 1px solid #73b611;
   -webkit-border-radius: 35px;
   -moz-border-radius: 35px;
   border-radius: 35px;
@@ -4119,7 +5601,8 @@ input, textarea, select {
 }
 .feedback2__inner:hover {
   border: none;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 .feedback2 .section__wraaper {
   margin-top: calc(1.5rem + 3vw);
@@ -4184,7 +5667,7 @@ input, textarea, select {
   }
 }
 .blog__inner--innerblogpage {
-  border: 1px solid #F8F5F0;
+  border: 1px solid #f8f5f0;
 }
 .blog__inner--innerblogpage .content .blogbtn {
   margin-top: calc(1.28125rem + 0.375vw);
@@ -4252,7 +5735,7 @@ input, textarea, select {
   gap: 30px;
 }
 .blogsingle__search {
-  border: 1px solid #F2F6F9;
+  border: 1px solid #f2f6f9;
   padding: calc(1.3125rem + 0.75vw);
 }
 @media (min-width: 1200px) {
@@ -4270,7 +5753,7 @@ input, textarea, select {
   transform: translateY(-50%);
 }
 .blogsingle__popularpost {
-  border: 1px solid #F2F6F9;
+  border: 1px solid #f2f6f9;
   padding: calc(1.3125rem + 0.75vw);
 }
 @media (min-width: 1200px) {
@@ -4301,7 +5784,7 @@ input, textarea, select {
   font-size: 0.9375rem;
 }
 .blogsingle__popularpost--relatedPost {
-  background: #F9F9F9;
+  background: #f9f9f9;
 }
 .blogsingle__popularpost--relatedPost .postitem {
   padding: calc(1.3125rem + 0.75vw);
@@ -4327,11 +5810,17 @@ input, textarea, select {
   color: #555555;
   font-size: 1rem;
 }
-.blogsingle__popularpost--popularpostshoppage .postitem ul li .content .allstar i {
+.blogsingle__popularpost--popularpostshoppage
+  .postitem
+  ul
+  li
+  .content
+  .allstar
+  i {
   font-size: 0.75rem;
 }
 .blogsingle__catagory {
-  border: 1px solid #F2F6F9;
+  border: 1px solid #f2f6f9;
   padding: calc(1.3125rem + 0.75vw);
 }
 @media (min-width: 1200px) {
@@ -4345,14 +5834,14 @@ input, textarea, select {
 .blogsingle__catagory .content ul li h6 a {
   font-size: 1rem;
   text-decoration: none;
-  color: #70717B;
+  color: #70717b;
 }
 .blogsingle__catagory .content ul li:last-child {
   border-bottom: none;
 }
 .blogsingle__alltag {
   padding: calc(1.3125rem + 0.75vw);
-  border: 1px solid #F2F6F9;
+  border: 1px solid #f2f6f9;
   padding: calc(1.3125rem + 0.75vw);
 }
 @media (min-width: 1200px) {
@@ -4372,7 +5861,7 @@ input, textarea, select {
   transition: all 0.3s ease;
 }
 .blogsingle__content {
-  border: 1px solid #F2F6F9;
+  border: 1px solid #f2f6f9;
   padding: 1.25rem;
 }
 .blogsingle__content .heading {
@@ -4411,7 +5900,7 @@ input, textarea, select {
 .blogsingle__content .quode {
   gap: 20px;
   margin: calc(1.34375rem + 1.125vw) 0;
-  background: #73B611;
+  background: #73b611;
   padding: calc(1.3125rem + 0.75vw) 1.25rem;
 }
 @media (min-width: 1200px) {
@@ -4470,13 +5959,13 @@ input, textarea, select {
   }
 }
 .blogsingle__content .tagbutton-icon .tagbutton ul li a {
-  border: 1px solid #F1F1F1;
+  border: 1px solid #f1f1f1;
   padding: 0.3125rem 0.625rem;
   color: #555;
   transition: all 0.3s ease;
 }
 .blogsingle__content .tagbutton-icon .tagbutton ul li a:hover {
-  border-color: #73B611;
+  border-color: #73b611;
 }
 .blogsingle__content .tagbutton-icon .tagicon ul {
   gap: 10px;
@@ -4502,8 +5991,9 @@ input, textarea, select {
   background: #007bb5;
 }
 .blogsingle__author {
-  padding: calc(1.3125rem + 0.75vw) calc(1.3125rem + 0.75vw) calc(1.375rem + 1.5vw) calc(1.3125rem + 0.75vw);
-  border: 1px solid #F2F6F9;
+  padding: calc(1.3125rem + 0.75vw) calc(1.3125rem + 0.75vw)
+    calc(1.375rem + 1.5vw) calc(1.3125rem + 0.75vw);
+  border: 1px solid #f2f6f9;
 }
 @media (min-width: 1200px) {
   .blogsingle__author {
@@ -4542,7 +6032,7 @@ input, textarea, select {
 }
 .blogsingle__comments {
   padding: calc(1.3125rem + 0.75vw);
-  border: 1px solid #F2F6F9;
+  border: 1px solid #f2f6f9;
 }
 @media (min-width: 1200px) {
   .blogsingle__comments {
@@ -4575,8 +6065,15 @@ input, textarea, select {
   font-size: 1rem;
   margin-top: 0.125rem;
 }
-.blogsingle__comments .content ul li .commentsarea .name-replaybtn .replaybtn a {
-  background: #73B611;
+.blogsingle__comments
+  .content
+  ul
+  li
+  .commentsarea
+  .name-replaybtn
+  .replaybtn
+  a {
+  background: #73b611;
   padding: 0.3125rem 1.25rem;
   margin-block: 10px 0;
   display: inline-block;
@@ -4599,7 +6096,7 @@ input, textarea, select {
 }
 .blogsingle__leavecoments {
   padding: calc(1.3125rem + 0.75vw);
-  border: 1px solid #F2F6F9;
+  border: 1px solid #f2f6f9;
 }
 @media (min-width: 1200px) {
   .blogsingle__leavecoments {
@@ -4648,10 +6145,10 @@ input, textarea, select {
   gap: 0px 30px;
 }
 .blogsingle__leavecoments--addreview .formarea form .alliput input {
-  border: 1px solid #F2F6F9;
+  border: 1px solid #f2f6f9;
 }
 .blogsingle__leavecoments--addreview .formarea form .alliput textarea {
-  border: 1px solid #F2F6F9;
+  border: 1px solid #f2f6f9;
 }
 .blogsingle__leavecoments--addreview .formarea form .reviewbtn {
   gap: 30px;
@@ -4668,7 +6165,14 @@ input, textarea, select {
 .blogsingle__leavecoments--addreview .formarea form .reviewbtn .allreview ul {
   gap: 5px;
 }
-.blogsingle__leavecoments--addreview .formarea form .reviewbtn .allreview ul li i {
+.blogsingle__leavecoments--addreview
+  .formarea
+  form
+  .reviewbtn
+  .allreview
+  ul
+  li
+  i {
   color: #555;
   font-size: 0.8125rem;
 }
@@ -4701,7 +6205,7 @@ input, textarea, select {
 .process__inner::after {
   width: 225px;
   height: 225px;
-  border: 1.5px solid #73B611;
+  border: 1.5px solid #73b611;
   border-style: dashed;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -4732,7 +6236,7 @@ input, textarea, select {
 }
 @media (min-width: 1366px) {
   .process__item .base::before {
-    border-bottom: 35px solid #F8F5F0;
+    border-bottom: 35px solid #f8f5f0;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     height: 0;
@@ -4822,10 +6326,10 @@ input, textarea, select {
   }
 }
 .accordion-item--item2 .accordion-button {
-  border: 1px solid #F8F5F0;
+  border: 1px solid #f8f5f0;
 }
 .accordion-item--item2 .accordion-body:not(.collapsed) {
-  border: 1px solid #F8F5F0;
+  border: 1px solid #f8f5f0;
 }
 
 @media (max-width: 1199px) {
@@ -4997,7 +6501,7 @@ input, textarea, select {
 .skill__item .skillbar-container .skills {
   height: 6px;
   width: 0;
-  border: 0.5px solid #F8F5F0;
+  border: 0.5px solid #f8f5f0;
   border-radius: 4px;
 }
 @media (max-width: 991px) {
@@ -5097,7 +6601,7 @@ input, textarea, select {
 
 .shoppage__item {
   padding: 0.9375rem;
-  border: 1px solid #F8F5F0;
+  border: 1px solid #f8f5f0;
 }
 .shoppage__item:hover .thum img {
   transform: scale(1.1);
@@ -5249,14 +6753,14 @@ input, textarea, select {
 .shopdetails__content .countadd .cart-plus-minus {
   gap: 10px;
   padding: 7px;
-  border: 1px solid #F2F6F9;
+  border: 1px solid #f2f6f9;
 }
 .shopdetails__content .countadd .cart-plus-minus input {
-  border: 1px solid #F2F6F9;
+  border: 1px solid #f2f6f9;
   padding: 0;
 }
 .shopdetails__content .countadd .cart-plus-minus .qtybutton {
-  border: 1px solid #F2F6F9;
+  border: 1px solid #f2f6f9;
 }
 .shopdetails__content .countadd form {
   width: 200px;
@@ -5278,7 +6782,7 @@ input, textarea, select {
   }
 }
 .shopdetails__wrapper {
-  border: 1px solid #F1F1F1;
+  border: 1px solid #f1f1f1;
   padding: 1.25rem;
 }
 
@@ -5293,10 +6797,10 @@ input, textarea, select {
   }
 }
 .cartdesk__innerborder {
-  border: 1px solid #F1F1F1;
+  border: 1px solid #f1f1f1;
 }
 .cartdesk__item {
-  border-bottom: 1px solid #F1F1F1;
+  border-bottom: 1px solid #f1f1f1;
 }
 .cartdesk__img {
   -webkit-border-radius: 40px;
@@ -5334,7 +6838,7 @@ input, textarea, select {
 .cartdesk__itemheading:after {
   width: 500px;
   height: 1px;
-  background: #F1F1F1;
+  background: #f1f1f1;
   transform: translateX(-50%);
 }
 
@@ -5364,7 +6868,7 @@ input, textarea, select {
 }
 .cartpage__item {
   width: 760px;
-  border: 1px solid #F2F6F9;
+  border: 1px solid #f2f6f9;
 }
 @media (min-width: 1200px) {
   .cartpage__item {
@@ -5373,7 +6877,7 @@ input, textarea, select {
 }
 .cartpage__header ul li {
   padding: 1.25rem;
-  border-right: 1px solid #F2F6F9;
+  border-right: 1px solid #f2f6f9;
 }
 .cartpage__header ul li:nth-child(1) {
   width: 288px;
@@ -5406,11 +6910,11 @@ input, textarea, select {
   width: 100px;
 }
 .cartpage__body ul li .price span {
-  color: #0B2239;
+  color: #0b2239;
 }
 .cartpage__body ul li .countadd {
-  border-right: 1px solid #F2F6F9;
-  border-top: 1px solid #F2F6F9;
+  border-right: 1px solid #f2f6f9;
+  border-top: 1px solid #f2f6f9;
   padding: calc(1.2625rem + 0.15vw) 0;
   width: 160px;
 }
@@ -5424,13 +6928,13 @@ input, textarea, select {
   padding: 7px;
 }
 .cartpage__body ul li .countadd .cart-plus-minus input {
-  border: 1px solid #F2F6F9;
+  border: 1px solid #f2f6f9;
   padding: 0;
-  color: #0B2239;
+  color: #0b2239;
 }
 .cartpage__body ul li .countadd .cart-plus-minus .qtybutton {
-  border: 1px solid #F2F6F9;
-  color: #0B2239;
+  border: 1px solid #f2f6f9;
+  color: #0b2239;
 }
 .cartpage__body ul li .countadd a {
   padding: 0.9375rem calc(1.4375rem + 2.25vw);
@@ -5444,14 +6948,14 @@ input, textarea, select {
   width: 110px;
 }
 .cartpage__body ul li .total span {
-  color: #0B2239;
+  color: #0b2239;
 }
 .cartpage__body ul li .remove {
   width: 100px;
   border-right: none;
 }
 .cartpage__body ul li .remove span {
-  color: #0B2239;
+  color: #0b2239;
 }
 .cartpage__discountcode {
   max-width: 470px;
@@ -5459,7 +6963,7 @@ input, textarea, select {
 }
 .cartpage__discountcode input {
   width: calc(100% - 180px);
-  border: 1px solid #F2F6F9;
+  border: 1px solid #f2f6f9;
   color: #555;
 }
 .cartpage__discountcode button {
@@ -5467,7 +6971,7 @@ input, textarea, select {
   height: 58px;
 }
 .cartpage__paymentitem {
-  border: 1px solid #F2F6F9;
+  border: 1px solid #f2f6f9;
 }
 @media (max-width: 1399px) {
   .cartpage__paymentitem {
@@ -5519,25 +7023,25 @@ input, textarea, select {
   margin-bottom: 0.625rem;
 }
 .cartpage__paymentitem .content form .country select {
-  border: 1px solid #F2F6F9;
+  border: 1px solid #f2f6f9;
 }
 .cartpage__paymentitem .content form .country select option {
   padding: 0.9375rem 1.25rem;
 }
 .cartpage__paymentitem .content form .zipcode input {
-  border: 1px solid #F2F6F9;
+  border: 1px solid #f2f6f9;
   color: #272727;
 }
 .cartpage__paymentitem .content form .zipcode ::placeholder {
   color: #272727;
 }
 .cartpage__paymentitem .content form .update button {
-  background: #F2F6F9;
+  background: #f2f6f9;
   padding: 0.9375rem 1.25rem;
 }
 .contactus__inner {
   padding: calc(1.375rem + 1.5vw) 1.25rem;
-  border: 1px solid #F8F5F0;
+  border: 1px solid #f8f5f0;
 }
 @media (min-width: 1200px) {
   .contactus__inner {
