@@ -248,8 +248,7 @@ body {
 
 /* Testimonial video background and overlay */
 .testimonial-video-wrapper {
-  width: 18rem;
-  height: 18rem;
+  height: 50rem;
   max-width: 100%;
   min-width: 12rem;
   min-height: 12rem;
