@@ -85,6 +85,10 @@ body {
   color: #bbb !important;
 }
 
+.footer .border-top {
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
 .floating-icon {
   pointer-events: none;
   /* opacity: 0.8; */
@@ -531,4 +535,8 @@ body {
 
 #scrollToTop i {
   color: #fff !important;
+}
+
+.footer .row {
+  column-gap: 4rem;
 }
