@@ -545,3 +545,64 @@ body {
   border-radius: 1.25rem;
   opacity: 0.92;
 }
+
+/* --- Navbar Dropdown on Hover (Desktop) --- */
+@media (min-width: 992px) {
+  .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+/* --- Modern Navbar Styles --- */
+.navbar {
+  font-size: 1.08rem;
+  letter-spacing: 0.01em;
+  background: #fff;
+  border-radius: 0 0 1.25rem 1.25rem;
+  box-shadow: 0 2px 16px rgba(32, 132, 84, 0.07);
+}
+.navbar-nav .nav-link {
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  border-radius: 0.75rem;
+  transition: background 0.18s, color 0.18s;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  background: #e6f4ec;
+  color: var(--primary-green) !important;
+}
+.dropdown-menu {
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 32px rgba(32, 132, 84, 0.13);
+  border: none;
+  margin-top: 0.5rem;
+  min-width: 11rem;
+}
+.dropdown-item {
+  border-radius: 0.5rem;
+  transition: background 0.18s, color 0.18s;
+}
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background: #e6f4ec;
+  color: var(--primary-green) !important;
+}
+/* Custom chevron for dropdown toggle */
+.navbar .dropdown-toggle::after {
+  display: none;
+}
+.navbar .dropdown-toggle .fa-chevron-down {
+  font-size: 0.95em;
+  margin-left: 0.45em;
+  vertical-align: middle;
+  color: #888;
+  transition: color 0.18s;
+}
+.navbar .dropdown-toggle:hover .fa-chevron-down,
+.navbar .dropdown-toggle:focus .fa-chevron-down {
+  color: var(--primary-green);
+}
