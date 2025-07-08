@@ -403,15 +403,17 @@ body {
 .testimonial-flex-row {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   gap: 2.5rem;
 }
 .testimonial-video-simple {
   position: relative;
   width: 50%;
-  max-width: 32rem;
-  min-width: 16rem;
-  aspect-ratio: 1/1;
+  max-width: 28rem;
+  min-width: 14rem;
+  aspect-ratio: 9/16;
+  height: auto;
   border-radius: 1.25rem;
   overflow: hidden;
   flex-shrink: 0;
@@ -419,6 +421,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
 }
 .testimonial-video-bg-simple {
   position: absolute;
@@ -465,6 +468,12 @@ body {
 .testimonial-content-simple {
   flex: 1 1 0%;
   min-width: 0;
+  width: 50%;
+  max-width: 50%;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 @media (max-width: 991.98px) {
   .testimonial-video-simple {
@@ -473,5 +482,9 @@ body {
   .testimonial-flex-row {
     flex-direction: column;
     gap: 2rem;
+  }
+  .testimonial-content-simple {
+    width: 100%;
+    max-width: 100%;
   }
 }
