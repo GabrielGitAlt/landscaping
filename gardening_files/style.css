@@ -144,6 +144,10 @@ body {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
   }
+  .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
 
 /* Hide scroll to top button by default, show when needed (JS toggles display) */
