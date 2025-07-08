@@ -248,13 +248,14 @@ body {
 
 /* Testimonial video background and overlay */
 .testimonial-video-wrapper {
-  aspect-ratio: 1.6/1;
-  width: 100%;
-  max-width: 420px;
-  min-height: 220px;
-  position: relative;
-  border-radius: 1rem;
+  width: 18rem;
+  height: 18rem;
+  max-width: 100%;
+  min-width: 12rem;
+  min-height: 12rem;
+  border-radius: 1.25rem;
   overflow: hidden;
+  position: relative;
   box-shadow: 0 0.5rem 2rem rgba(32, 132, 84, 0.15),
     0 0.125rem 0.25rem rgba(0, 0, 0, 0.08);
 }
@@ -298,8 +299,10 @@ body {
 }
 @media (max-width: 575.98px) {
   .testimonial-video-wrapper {
-    min-height: 140px;
-    max-width: 100%;
+    width: 12rem;
+    height: 12rem;
+    min-width: 8rem;
+    min-height: 8rem;
     border-radius: 0.75rem;
   }
   .testimonial-play-btn {
