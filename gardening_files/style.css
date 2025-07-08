@@ -326,7 +326,7 @@ body {
 .testimonial-card {
   display: flex;
   align-items: flex-start;
-  gap: 1.5rem;
+  gap: 0.5rem;
   background: #fff;
   border-radius: 1.25rem;
   box-shadow: 0 4px 24px 0 rgba(32, 132, 84, 0.1),
@@ -539,4 +539,9 @@ body {
 
 .footer .row {
   column-gap: 4rem;
+}
+
+.about-img-rounded {
+  border-radius: 1.25rem;
+  opacity: 0.92;
 }
