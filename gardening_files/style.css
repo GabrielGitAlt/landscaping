@@ -168,3 +168,25 @@ body {
 .text-success {
   color: var(--primary-green) !important;
 }
+
+/* Move carousel arrows further to the sides for Our Work section */
+.work-carousel-control {
+  width: 5rem;
+}
+.work-carousel-control.carousel-control-prev {
+  left: -3rem;
+}
+.work-carousel-control.carousel-control-next {
+  right: -3rem;
+}
+@media (max-width: 991.98px) {
+  .work-carousel-control {
+    width: 2.5rem;
+  }
+  .work-carousel-control.carousel-control-prev {
+    left: -1.5rem;
+  }
+  .work-carousel-control.carousel-control-next {
+    right: -1.5rem;
+  }
+}
