@@ -227,3 +227,18 @@ body {
   box-shadow: 0 0.5rem 2rem rgba(32, 132, 84, 0.25),
     0 0.125rem 0.25rem rgba(0, 0, 0, 0.08) !important;
 }
+
+/* Ensure play button in testimonials section is a perfect circle and icon is centered */
+.testimonials .rounded-circle {
+  width: 80px;
+  height: 80px;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.testimonials .fa-play {
+  font-size: 2rem;
+  margin: 0;
+}
