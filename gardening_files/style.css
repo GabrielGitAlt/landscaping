@@ -519,3 +519,16 @@ body {
     max-width: 100%;
   }
 }
+
+/* Footer section max-width, allow shrinking */
+.footer-section {
+  max-width: 200px;
+  width: 100%;
+}
+.footer-about {
+  max-width: 350px;
+}
+
+#scrollToTop i {
+  color: #fff !important;
+}
