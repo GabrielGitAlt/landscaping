@@ -171,22 +171,38 @@ body {
 
 /* Move carousel arrows further to the sides for Our Work section */
 .work-carousel-control {
-  width: 5rem;
+  width: 6.5rem;
 }
 .work-carousel-control.carousel-control-prev {
-  left: -3rem;
+  left: -5rem;
 }
 .work-carousel-control.carousel-control-next {
-  right: -3rem;
+  right: -5rem;
 }
 @media (max-width: 991.98px) {
   .work-carousel-control {
-    width: 2.5rem;
+    width: 3.5rem;
   }
   .work-carousel-control.carousel-control-prev {
-    left: -1.5rem;
+    left: -2.5rem;
   }
   .work-carousel-control.carousel-control-next {
-    right: -1.5rem;
+    right: -2.5rem;
+  }
+}
+@media (max-width: 767.98px) {
+  /* Only show the first image in each carousel-item on mobile */
+  .our-work .carousel-item .col-6:not(:first-child),
+  .our-work .carousel-item .col-md-3:not(:first-child) {
+    display: none !important;
+  }
+  .work-carousel-control {
+    width: 2rem;
+  }
+  .work-carousel-control.carousel-control-prev {
+    left: -1rem;
+  }
+  .work-carousel-control.carousel-control-next {
+    right: -1rem;
   }
 }
