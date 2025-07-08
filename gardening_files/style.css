@@ -412,7 +412,7 @@ body {
   width: 50%;
   max-width: 28rem;
   min-width: 14rem;
-  aspect-ratio: 9/16;
+  aspect-ratio: 5/7;
   height: auto;
   border-radius: 1.25rem;
   overflow: hidden;
