@@ -798,35 +798,51 @@
 
       // === Static Carousel Logic ===
       const carousel = document.querySelector(".carousel");
-      const items = document.querySelectorAll(".carousel-item");
       const prevBtn = document.getElementById("prevBtn");
       const nextBtn = document.getElementById("nextBtn");
-      let currentIndex = 0;
 
-      function getItemsPerView() {
-        const itemWidth = items[0].getBoundingClientRect().width;
-        const viewportWidth =
-          document.querySelector(".carousel-viewport").clientWidth;
-        return Math.floor(viewportWidth / itemWidth);
+      function itemWidth() {
+        const item = carousel.querySelector(".carousel-item");
+        const style = getComputedStyle(item);
+        return (
+          item.getBoundingClientRect().width +
+          parseFloat(style.marginLeft) +
+          parseFloat(style.marginRight)
+        );
       }
 
-      function updateCarousel() {
-        const itemWidth = items[0].getBoundingClientRect().width + 16; // 8px margin each side
-        carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+      function slidePrev() {
+        const w = itemWidth();
+        carousel.style.transition = "none";
+        carousel.insertBefore(
+          carousel.lastElementChild,
+          carousel.firstElementChild
+        );
+        carousel.style.transform = `translateX(-${w}px)`;
+        requestAnimationFrame(() => {
+          carousel.style.transition = "transform 0.4s ease";
+          carousel.style.transform = "translateX(0)";
+        });
       }
 
-      nextBtn.addEventListener("click", () => {
-        currentIndex = (currentIndex + 1) % items.length;
-        updateCarousel();
-      });
+      function slideNext() {
+        const w = itemWidth();
+        carousel.style.transition = "transform 0.4s ease";
+        carousel.style.transform = `translateX(-${w}px)`;
+        carousel.addEventListener("transitionend", function handler() {
+          carousel.appendChild(carousel.firstElementChild);
+          carousel.style.transition = "none";
+          carousel.style.transform = "translateX(0)";
+          carousel.removeEventListener("transitionend", handler);
+        });
+      }
 
-      prevBtn.addEventListener("click", () => {
-        currentIndex = (currentIndex - 1 + items.length) % items.length;
-        updateCarousel();
+      prevBtn.addEventListener("click", slidePrev);
+      nextBtn.addEventListener("click", slideNext);
+      window.addEventListener("resize", () => {
+        carousel.style.transition = "none";
+        carousel.style.transform = "translateX(0)";
       });
-
-      window.addEventListener("resize", updateCarousel);
-      updateCarousel();
     </script>
   </body>
 </html>
