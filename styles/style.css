@@ -802,4 +802,7 @@ button:disabled {
     position: unset;
     top: unset;
   }
+  .navbar-nav .nav-item {
+    margin: 1rem 0.5rem;
+  }
 }
