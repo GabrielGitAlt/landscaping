@@ -17,12 +17,15 @@
     />
     <link
       rel="icon"
-      type="image/png"
-      href="/assets/images/logo_short.svg"
+      type="image/x-icon"
+      href="{{ '/favicon.ico' | relative_url }}"
       sizes="16x16"
     />
-    <link rel="stylesheet" href="/styles/bootstrap.min.css" />
-    <link rel="stylesheet" href="/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="{{ '/styles/bootstrap.min.css' | relative_url }}"
+    />
+    <link rel="stylesheet" href="{{ '/styles/style.css' | relative_url }}" />
     <script
       src="https://kit.fontawesome.com/549e839921.js"
       crossorigin="anonymous"
@@ -44,7 +47,7 @@
     >
       <i class="fa-solid fa-arrow-up-long"></i>
     </button>
-    <script src="/styles/bootstrap.bundle.min.js"></script>
+    <script src="{{ '/styles/bootstrap.bundle.min.js' | relative_url }}"></script>
     <script>
       // Show/hide scroll to top button
       window.addEventListener("scroll", function () {
