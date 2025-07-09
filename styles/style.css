@@ -435,7 +435,7 @@ body {
 .testimonial-video-bg-simple {
   position: absolute;
   inset: 0;
-  background-image: url('{{ "/assets/images/video.png" | relative_url }}');
+  background-image: url("../assets/images/video.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
