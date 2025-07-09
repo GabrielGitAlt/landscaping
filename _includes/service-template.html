@@ -13,7 +13,7 @@
   <img
     src="{{ page.service_image | default: '/assets/images/services/placeholder.jpg' | relative_url }}"
     alt="{{ page.service_title | default: 'Service Image' }}"
-    class="img-fluid w-100 h-100 service-hero-img"
+    class="img-fluid w-100 h-100"
     style="
       object-fit: cover;
       height: 100%;
@@ -23,8 +23,8 @@
     "
   />
   <div
-    class="position-absolute top-0 start-0 w-100 h-100 service-hero-overlay"
-    style="background: rgba(20, 30, 40, 0.68); z-index: 1"
+    class="position-absolute top-0 start-0 w-100 h-100"
+    style="background: rgba(20, 30, 40, 0.65); z-index: 1"
   ></div>
   <div
     class="position-absolute top-50 start-50 translate-middle w-100"
@@ -52,34 +52,6 @@
     </div>
   </div>
 </section>
-
-<style>
-  @media (max-width: 991.98px) {
-    .service-hero {
-      height: 340px !important;
-      min-height: 340px !important;
-      max-height: 400px !important;
-    }
-    .service-hero-img {
-      height: 340px !important;
-      min-height: 340px !important;
-      max-height: 400px !important;
-      object-fit: cover !important;
-    }
-    .service-hero-overlay {
-      background: rgba(20, 30, 40, 0.78) !important;
-    }
-    .service-hero .mx-auto.text-center.px-3 {
-      padding-left: 0.5rem !important;
-      padding-right: 0.5rem !important;
-    }
-    .service-hero h1,
-    .service-hero p,
-    .service-hero i {
-      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7) !important;
-    }
-  }
-</style>
 
 <section class="py-5 bg-white">
   <div class="container" style="max-width: 800px">
