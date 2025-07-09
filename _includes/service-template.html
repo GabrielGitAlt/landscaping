@@ -1,13 +1,10 @@
-<section class="py-5 bg-success text-white text-center">
-  <div class="container">
-    <h1 class="display-4 fw-bold mb-3">
-      {{ page.service_title | default: 'Service Name' }}
-    </h1>
-    <p class="lead mb-0">
-      {{ page.service_tagline | default: 'Professional and reliable service for
-      your landscape.' }}
-    </p>
-  </div>
+<section class="service-hero position-relative">
+  <img
+    src="{{ page.service_image | default: '/assets/images/services/placeholder.jpg' }}"
+    alt="{{ page.service_title | default: 'Service Image' }}"
+    class="img-fluid w-100"
+    style="max-height: 400px; object-fit: cover"
+  />
 </section>
 
 <section class="py-5 bg-white">
@@ -16,9 +13,9 @@
       <i
         class="{{ page.service_icon | default: 'fa-solid fa-leaf' }} fa-4x text-success mb-4"
       ></i>
-      <h2 class="fw-bold mb-4 text-success">
-        About Our {{ page.service_title | default: 'Service' }}
-      </h2>
+      <h1 class="fw-bold mb-3 text-success">
+        {{ page.service_title | default: 'Service Name' }}
+      </h1>
       <p class="lead text-muted">
         {{ page.service_description | default: 'Detailed description of the
         service goes here. Explain what is included, the benefits, and why
@@ -27,22 +24,19 @@
     </div>
     <div class="mb-5">
       <h3 class="fw-bold mb-3 text-success">
-        Why Choose MTZ for {{ page.service_title | default: 'This Service' }}?
+        When You Might Need This Service
       </h3>
-      <ul class="list-unstyled fs-5 mb-0">
-        <li class="mb-3 d-flex align-items-center">
-          <i class="fa-solid fa-check-circle me-3 text-success"></i>
-          <span>Experienced, family-owned business with a personal touch</span>
-        </li>
-        <li class="mb-3 d-flex align-items-center">
-          <i class="fa-solid fa-check-circle me-3 text-success"></i>
-          <span>High-quality materials and professional equipment</span>
-        </li>
-        <li class="mb-3 d-flex align-items-center">
-          <i class="fa-solid fa-check-circle me-3 text-success"></i>
-          <span>Reliable, on-time service and clear communication</span>
-        </li>
-      </ul>
+      <p>
+        {{ page.service_when | default: 'Describe common situations or problems
+        that indicate a need for this service.' }}
+      </p>
+    </div>
+    <div class="mb-5">
+      <h3 class="fw-bold mb-3 text-success">What MTZ Does</h3>
+      <p>
+        {{ page.service_process | default: 'Explain the process, steps, and care
+        MTZ provides when delivering this service.' }}
+      </p>
     </div>
     <div class="text-center mt-5">
       <a href="/contact/" class="btn btn-success btn-lg px-5 py-3"
