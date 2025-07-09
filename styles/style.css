@@ -820,3 +820,63 @@ button:disabled {
     margin: 1rem 0.5rem;
   }
 }
+
+/* Contact page space efficiency and seamless blending */
+.contact-section-bg {
+  background: #f8faf6;
+}
+
+.contact-section-inner {
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
+/* Remove box shadows from form and info blocks */
+.shadow-lg,
+.shadow,
+.box-shadow {
+  box-shadow: none !important;
+}
+
+/* Make sure both blocks are stacked and max-width is controlled */
+@media (max-width: 991.98px) {
+  .contact-section-inner {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
+/* Make the contact info list more compact */
+.contact-info-list li {
+  margin-bottom: 1rem;
+  align-items: flex-start;
+}
+
+/* Remove background from info block */
+.contact-info-block {
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+}
+
+/* Make the section titles closer together */
+.contact-section-inner h2 {
+  margin-bottom: 1.5rem;
+}
+
+/* Reduce vertical spacing on mobile */
+@media (max-width: 575.98px) {
+  .contact-section-inner {
+    padding: 0 0.5rem;
+  }
+  .contact-section-inner h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .contact-info-list li {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+}
