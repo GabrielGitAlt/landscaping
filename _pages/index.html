@@ -503,54 +503,72 @@ permalink: /
 </section>
 
 <script>
-  (function () {
-    const carousel = document.querySelector(".carousel");
-    const items = document.querySelectorAll(".carousel-item");
-    const prevBtn = document.getElementById("prevBtn");
-    const nextBtn = document.getElementById("nextBtn");
-    let currentIndex = 0;
+  const carousel = document.querySelector(".carousel");
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
 
-    // Responsive: how many items to show at once
-    function getVisibleCount() {
-      if (window.innerWidth < 768) return 1;
-      if (window.innerWidth < 1200) return 2;
-      return 3;
-    }
+  function itemWidth() {
+    const item = carousel.querySelector(".carousel-item");
+    const style = getComputedStyle(item);
+    return (
+      item.getBoundingClientRect().width +
+      parseFloat(style.marginLeft) +
+      parseFloat(style.marginRight)
+    );
+  }
 
-    function showItems(index) {
-      const visibleCount = getVisibleCount();
-      items.forEach((item, i) => {
-        if (
-          (i >= index && i < index + visibleCount) ||
-          (index + visibleCount > items.length &&
-            i < (index + visibleCount) % items.length)
-        ) {
-          item.style.display = "block";
-        } else {
-          item.style.display = "none";
-        }
-      });
-    }
+  let animating = false;
+  function lockBtns() {
+    animating = true;
+    prevBtn.disabled = nextBtn.disabled = true;
+  }
+  function unlockBtns() {
+    animating = false;
+    prevBtn.disabled = nextBtn.disabled = false;
+  }
 
-    function showNext() {
-      const visibleCount = getVisibleCount();
-      currentIndex = (currentIndex + 1) % items.length;
-      showItems(currentIndex);
-    }
+  function slidePrev() {
+    if (animating) return;
+    lockBtns();
+    const w = itemWidth();
+    carousel.style.transition = "none";
+    carousel.insertBefore(
+      carousel.lastElementChild,
+      carousel.firstElementChild
+    );
+    carousel.style.transform = `translateX(-${w}px)`;
+    requestAnimationFrame(() => {
+      carousel.style.transition = "transform 0.4s ease";
+      carousel.style.transform = "translateX(0)";
+      const onEnd = () => {
+        carousel.style.transition = "none";
+        carousel.removeEventListener("transitionend", onEnd);
+        unlockBtns();
+      };
+      carousel.addEventListener("transitionend", onEnd, { once: true });
+    });
+  }
 
-    function showPrev() {
-      const visibleCount = getVisibleCount();
-      currentIndex = (currentIndex - 1 + items.length) % items.length;
-      showItems(currentIndex);
-    }
+  function slideNext() {
+    if (animating) return;
+    lockBtns();
+    const w = itemWidth();
+    carousel.style.transition = "transform 0.4s ease";
+    carousel.style.transform = `translateX(-${w}px)`;
+    const onEnd = () => {
+      carousel.appendChild(carousel.firstElementChild);
+      carousel.style.transition = "none";
+      carousel.style.transform = "translateX(0)";
+      carousel.removeEventListener("transitionend", onEnd);
+      unlockBtns();
+    };
+    carousel.addEventListener("transitionend", onEnd, { once: true });
+  }
 
-    if (carousel && items.length > 0 && prevBtn && nextBtn) {
-      showItems(currentIndex);
-      prevBtn.addEventListener("click", showPrev);
-      nextBtn.addEventListener("click", showNext);
-      window.addEventListener("resize", () => showItems(currentIndex));
-      // Marquee effect: auto-scroll
-      setInterval(showNext, 3500);
-    }
-  })();
+  prevBtn.addEventListener("click", slidePrev);
+  nextBtn.addEventListener("click", slideNext);
+  window.addEventListener("resize", () => {
+    carousel.style.transition = "none";
+    carousel.style.transform = "translateX(0)";
+  });
 </script>
