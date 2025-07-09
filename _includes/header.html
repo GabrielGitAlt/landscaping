@@ -226,7 +226,8 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            <i class="fa-solid fa-globe me-1"></i> Language
+            <i class="fa-solid fa-globe me-1"></i> {% if is_es == '/es/'
+            %}Lenguaje{% else %}Language{% endif %}
           </a>
           <ul class="dropdown-menu" aria-labelledby="langDropdown">
             <li>
