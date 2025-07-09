@@ -637,10 +637,10 @@ body {
 }
 .carousel-item img {
   width: 100%;
-  height: 260px;
+  height: 100%;
   object-fit: cover;
-  border-radius: 1rem;
   display: block;
+  border-radius: 0;
 }
 @media (min-width: 600px) {
   .carousel-item img {
@@ -657,8 +657,16 @@ body {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
+  .carousel-item {
+    width: 80vw;
+    max-width: 100%;
+    height: 240px;
+  }
   .carousel-item img {
-    height: 180px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
 }
 @media (min-width: 600px) {
