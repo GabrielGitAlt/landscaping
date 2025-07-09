@@ -14,17 +14,25 @@
         <ul class="list-unstyled">
           <li class="mb-2">
             <i class="fa-solid fa-leaf text-success me-2"></i>
-            <a href="/" class="text-muted text-decoration-none">Home</a>
+            <a
+              href="{{ '/' | relative_url }}"
+              class="text-muted text-decoration-none"
+              >Home</a
+            >
           </li>
           <li class="mb-2">
             <i class="fa-solid fa-leaf text-success me-2"></i>
-            <a href="/about" class="text-muted text-decoration-none"
+            <a
+              href="{{ '/about/' | relative_url }}"
+              class="text-muted text-decoration-none"
               >About Us</a
             >
           </li>
           <li class="mb-2">
             <i class="fa-solid fa-leaf text-success me-2"></i>
-            <a href="/contact" class="text-muted text-decoration-none"
+            <a
+              href="{{ '/contact/' | relative_url }}"
+              class="text-muted text-decoration-none"
               >Contact Us</a
             >
           </li>

@@ -65,10 +65,10 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto me-4 mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="{{ '/' | relative_url }}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/about">About</a>
+          <a class="nav-link" href="{{ '/about/' | relative_url }}">About</a>
         </li>
         <li class="nav-item dropdown">
           <a
@@ -85,7 +85,7 @@
             <li>
               <a
                 class="dropdown-item d-flex align-items-center"
-                href="/garden-design.html"
+                href="{{ '/services/garden-design/' | relative_url }}"
               >
                 <i class="fa-solid fa-seedling me-2 text-success"></i> Garden
                 Design
@@ -94,7 +94,7 @@
             <li>
               <a
                 class="dropdown-item d-flex align-items-center"
-                href="/garden-plantation.html"
+                href="{{ '/services/garden-plantation/' | relative_url }}"
               >
                 <i class="fa-solid fa-tree me-2 text-success"></i> Garden
                 Plantation
@@ -103,7 +103,7 @@
             <li>
               <a
                 class="dropdown-item d-flex align-items-center"
-                href="/garden-maintenance.html"
+                href="{{ '/services/garden-maintenance/' | relative_url }}"
               >
                 <i class="fa-solid fa-broom me-2 text-success"></i> Garden
                 Maintenance
@@ -112,7 +112,7 @@
             <li>
               <a
                 class="dropdown-item d-flex align-items-center"
-                href="/irrigation-systems.html"
+                href="{{ '/services/irrigation-systems/' | relative_url }}"
               >
                 <i class="fa-solid fa-water me-2 text-success"></i> Irrigation
                 Systems
@@ -121,7 +121,7 @@
             <li>
               <a
                 class="dropdown-item d-flex align-items-center"
-                href="/tree-trimming.html"
+                href="{{ '/services/tree-trimming/' | relative_url }}"
               >
                 <i class="fa-solid fa-scissors me-2 text-success"></i> Tree
                 Trimming
@@ -130,7 +130,7 @@
             <li>
               <a
                 class="dropdown-item d-flex align-items-center"
-                href="/sprinkler-system-repairs.html"
+                href="{{ '/services/sprinkler-system-repairs/' | relative_url }}"
               >
                 <i class="fa-solid fa-screwdriver-wrench me-2 text-success"></i>
                 Sprinkler System Repairs
@@ -140,7 +140,9 @@
         </li>
       </ul>
       <div class="d-flex align-items-center mb-2 mb-lg-0" style="gap: 0.5rem">
-        <a href="/contact/" class="btn btn-success">Contact Us</a>
+        <a href="{{ '/contact/' | relative_url }}" class="btn btn-success"
+          >Contact Us</a
+        >
       </div>
     </div>
   </div>
