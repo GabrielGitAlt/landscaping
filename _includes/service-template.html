@@ -11,7 +11,7 @@
   "
 >
   <img
-    src="{{ page.service_image | default: '/assets/images/services/placeholder.jpg' }}"
+    src="{{ page.service_image | default: '/assets/images/services/placeholder.jpg' | relative_url }}"
     alt="{{ page.service_title | default: 'Service Image' }}"
     class="img-fluid w-100 h-100"
     style="
