@@ -811,7 +811,19 @@
         );
       }
 
+      let animating = false;
+      function lockBtns() {
+        animating = true;
+        prevBtn.disabled = nextBtn.disabled = true;
+      }
+      function unlockBtns() {
+        animating = false;
+        prevBtn.disabled = nextBtn.disabled = false;
+      }
+
       function slidePrev() {
+        if (animating) return;
+        lockBtns();
         const w = itemWidth();
         carousel.style.transition = "none";
         carousel.insertBefore(
@@ -822,19 +834,29 @@
         requestAnimationFrame(() => {
           carousel.style.transition = "transform 0.4s ease";
           carousel.style.transform = "translateX(0)";
+          const onEnd = () => {
+            carousel.style.transition = "none";
+            carousel.removeEventListener("transitionend", onEnd);
+            unlockBtns();
+          };
+          carousel.addEventListener("transitionend", onEnd, { once: true });
         });
       }
 
       function slideNext() {
+        if (animating) return;
+        lockBtns();
         const w = itemWidth();
         carousel.style.transition = "transform 0.4s ease";
         carousel.style.transform = `translateX(-${w}px)`;
-        carousel.addEventListener("transitionend", function handler() {
+        const onEnd = () => {
           carousel.appendChild(carousel.firstElementChild);
           carousel.style.transition = "none";
           carousel.style.transform = "translateX(0)";
-          carousel.removeEventListener("transitionend", handler);
-        });
+          carousel.removeEventListener("transitionend", onEnd);
+          unlockBtns();
+        };
+        carousel.addEventListener("transitionend", onEnd, { once: true });
       }
 
       prevBtn.addEventListener("click", slidePrev);
