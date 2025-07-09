@@ -952,10 +952,10 @@ button:disabled {
 
 /* Make contact form text boxes more noticeable */
 .contact-section-inner .form-control {
-  border: 2px solid #208454 !important; /* Use primary green, thicker border */
-  box-shadow: 0 0 0 0.1rem rgba(32, 132, 84, 0.15);
+  border: 2px solid #bbb !important; /* Gray border */
+  box-shadow: 0 0 0 0.1rem rgba(32, 132, 84, 0.1); /* Light green shadow */
 }
 .contact-section-inner .form-control:focus {
   border-color: #1b6b45 !important; /* Accent green on focus */
-  box-shadow: 0 0 0 0.2rem rgba(32, 132, 84, 0.18);
+  box-shadow: 0 0 0 0.2rem rgba(32, 132, 84, 0.18); /* Slightly stronger green shadow on focus */
 }
