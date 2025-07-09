@@ -653,8 +653,12 @@ body {
   }
 }
 @media (max-width: 599px) {
+  .carousel-container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
   .carousel-item img {
-    height: 140px;
+    height: 180px;
   }
 }
 @media (min-width: 600px) {
@@ -697,4 +701,11 @@ button:disabled {
 .carousel-container .btn i {
   color: #fff !important;
   font-size: 2.5rem;
+}
+
+.carousel-container .btn:disabled,
+.carousel-container .btn:disabled i {
+  opacity: 1 !important;
+  color: #fff !important;
+  filter: none !important;
 }
