@@ -140,6 +140,33 @@
         </li>
       </ul>
       <div class="d-flex align-items-center mb-2 mb-lg-0" style="gap: 0.5rem">
+        <div class="dropdown me-2">
+          <button
+            class="btn btn-outline-success dropdown-toggle"
+            type="button"
+            id="langDropdown"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-globe me-1"></i> Language
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="langDropdown">
+            <li>
+              <a
+                class="dropdown-item"
+                href="{{ page.url | replace_first:'/es','' | relative_url }}"
+                >English</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="{{ '/es' | append: page.url | relative_url }}"
+                >Español</a
+              >
+            </li>
+          </ul>
+        </div>
         <a href="{{ '/contact/' | relative_url }}" class="btn btn-success"
           >Contact Us</a
         >
