@@ -637,10 +637,25 @@ body {
 }
 .carousel-item img {
   width: 100%;
-  height: 180px;
+  height: 260px;
   object-fit: cover;
   border-radius: 1rem;
   display: block;
+}
+@media (min-width: 600px) {
+  .carousel-item img {
+    height: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  .carousel-item img {
+    height: 260px;
+  }
+}
+@media (max-width: 599px) {
+  .carousel-item img {
+    height: 140px;
+  }
 }
 @media (min-width: 600px) {
   .carousel-item {
@@ -668,5 +683,19 @@ body {
 
 button:disabled {
   opacity: 0.5;
-  cursor: not-allowed;
+}
+
+.carousel-container .btn {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0.25rem 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-container .btn i {
+  color: #fff !important;
+  font-size: 2.5rem;
+  text-shadow: 0 2px 8px rgba(32, 32, 32, 0.25);
 }
