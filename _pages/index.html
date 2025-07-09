@@ -501,3 +501,56 @@ permalink: /
     </div>
   </div>
 </section>
+
+<script>
+  (function () {
+    const carousel = document.querySelector(".carousel");
+    const items = document.querySelectorAll(".carousel-item");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+    let currentIndex = 0;
+
+    // Responsive: how many items to show at once
+    function getVisibleCount() {
+      if (window.innerWidth < 768) return 1;
+      if (window.innerWidth < 1200) return 2;
+      return 3;
+    }
+
+    function showItems(index) {
+      const visibleCount = getVisibleCount();
+      items.forEach((item, i) => {
+        if (
+          (i >= index && i < index + visibleCount) ||
+          (index + visibleCount > items.length &&
+            i < (index + visibleCount) % items.length)
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    }
+
+    function showNext() {
+      const visibleCount = getVisibleCount();
+      currentIndex = (currentIndex + 1) % items.length;
+      showItems(currentIndex);
+    }
+
+    function showPrev() {
+      const visibleCount = getVisibleCount();
+      currentIndex = (currentIndex - 1 + items.length) % items.length;
+      showItems(currentIndex);
+    }
+
+    if (carousel && items.length > 0 && prevBtn && nextBtn) {
+      showItems(currentIndex);
+      prevBtn.addEventListener("click", showPrev);
+      nextBtn.addEventListener("click", showNext);
+      window.addEventListener("resize", () => showItems(currentIndex));
+      // Marquee effect: auto-scroll
+      setInterval(showNext, 3500);
+    }
+  })();
+</script>

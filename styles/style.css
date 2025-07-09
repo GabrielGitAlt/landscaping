@@ -5,6 +5,7 @@
   --text-dark: #222;
   --text-light: #fff;
   --accent-green: #1b6b45;
+  --site-bg: #fff;
 }
 
 /* === Utility Classes === */
@@ -22,7 +23,7 @@
 /* === Section Tweaks === */
 body {
   font-family: "Poppins", "Public Sans", "Manrope", Arial, sans-serif;
-  background: var(--background-cream);
+  background: var(--site-bg);
   color: var(--text-dark);
 }
 
@@ -878,5 +879,21 @@ button:disabled {
   .contact-info-list li {
     font-size: 1rem;
     margin-bottom: 0.75rem;
+  }
+}
+
+.service-hero {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+@media (max-width: 767.98px) {
+  .service-hero {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
 }

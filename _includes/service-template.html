@@ -1,27 +1,60 @@
-<section class="service-hero position-relative">
+<section
+  class="service-hero position-relative"
+  style="
+    height: 420px;
+    min-height: 320px;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  "
+>
   <img
     src="{{ page.service_image | default: '/assets/images/services/placeholder.jpg' }}"
     alt="{{ page.service_title | default: 'Service Image' }}"
-    class="img-fluid w-100"
-    style="max-height: 400px; object-fit: cover"
+    class="img-fluid w-100 h-100"
+    style="
+      object-fit: cover;
+      height: 100%;
+      min-height: 320px;
+      max-height: 420px;
+      width: 100vw;
+    "
   />
-</section>
-
-<section class="py-5 bg-white">
-  <div class="container" style="max-width: 800px">
-    <div class="mb-5 text-center">
+  <div
+    class="position-absolute top-0 start-0 w-100 h-100"
+    style="background: rgba(20, 30, 40, 0.65); z-index: 1"
+  ></div>
+  <div
+    class="position-absolute top-50 start-50 translate-middle w-100"
+    style="z-index: 2"
+  >
+    <div class="mx-auto text-center px-3" style="max-width: 800px">
       <i
-        class="{{ page.service_icon | default: 'fa-solid fa-leaf' }} fa-4x text-success mb-4"
+        class="{{ page.service_icon | default: 'fa-solid fa-leaf' }} fa-4x mb-4"
+        style="color: #fff !important"
       ></i>
-      <h1 class="fw-bold mb-3 text-success">
+      <h1
+        class="fw-bold mb-3"
+        style="color: #fff; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5)"
+      >
         {{ page.service_title | default: 'Service Name' }}
       </h1>
-      <p class="lead text-muted">
+      <p
+        class="lead mb-0"
+        style="color: #fff; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5)"
+      >
         {{ page.service_description | default: 'Detailed description of the
         service goes here. Explain what is included, the benefits, and why
         customers should choose this service.' }}
       </p>
     </div>
+  </div>
+</section>
+
+<section class="py-5 bg-white">
+  <div class="container" style="max-width: 800px">
     <div class="mb-5">
       <h3 class="fw-bold mb-3 text-success">
         When You Might Need This Service
